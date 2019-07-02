@@ -36,7 +36,6 @@ namespace BrainyOgrasm
             {
                 user = new User(rtbPlayerName.Text, TypeOfGame());
                 DialogResult = DialogResult.OK;
-
             }
             else
                 return;
@@ -70,9 +69,7 @@ namespace BrainyOgrasm
                 return rbDinosaurs.Text;
             else if (rbPornStars.Checked)
                 return rbPornStars.Text;
-            else if (rbUniverse.Checked)
-                return rbUniverse.Text;
-            return null;
+            return rbUniverse.Text;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -63,6 +63,16 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AlbertEinstein {
+            get {
+                object obj = ResourceManager.GetObject("AlbertEinstein", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blackHole {
             get {
                 object obj = ResourceManager.GetObject("blackHole", resourceCulture);
@@ -83,9 +93,39 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap brain {
+            get {
+                object obj = ResourceManager.GetObject("brain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CharlesDarwin {
+            get {
+                object obj = ResourceManager.GetObject("CharlesDarwin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comet {
             get {
                 object obj = ResourceManager.GetObject("comet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emoji {
+            get {
+                object obj = ResourceManager.GetObject("emoji", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +163,56 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IsaacNewton {
+            get {
+                object obj = ResourceManager.GetObject("IsaacNewton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JohannesFeynman {
+            get {
+                object obj = ResourceManager.GetObject("JohannesFeynman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JohannesKepler {
+            get {
+                object obj = ResourceManager.GetObject("JohannesKepler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lamp {
+            get {
+                object obj = ResourceManager.GetObject("lamp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MarieCurie {
+            get {
+                object obj = ResourceManager.GetObject("MarieCurie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MilkyWay {
             get {
                 object obj = ResourceManager.GetObject("MilkyWay", resourceCulture);
@@ -143,6 +233,26 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NikolaTesla {
+            get {
+                object obj = ResourceManager.GetObject("NikolaTesla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OttoHahn {
+            get {
+                object obj = ResourceManager.GetObject("OttoHahn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sun {
             get {
                 object obj = ResourceManager.GetObject("sun", resourceCulture);
@@ -156,6 +266,16 @@ namespace BrainyOgrasm.Properties {
         internal static System.Drawing.Bitmap supernova {
             get {
                 object obj = ResourceManager.GetObject("supernova", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ThomasEdison {
+            get {
+                object obj = ResourceManager.GetObject("ThomasEdison", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

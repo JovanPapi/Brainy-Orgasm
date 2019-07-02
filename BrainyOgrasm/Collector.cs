@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    [Serializable]
     public class Collector
     {
         private int maxX, maxY;

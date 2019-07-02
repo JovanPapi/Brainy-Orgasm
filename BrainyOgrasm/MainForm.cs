@@ -18,11 +18,11 @@ namespace BrainyOgrasm
         private ListImages images;
         private ListImages images2;
         private Random rNumber;
-        private int countNumber;
         private string ImagePath;
-        public static List<User> users = new List<User>();
+        public static List<User> users;
         FileStream stream;
         private int count;
+        private List<Image> mainImages;
 
 
         public MainForm()
@@ -31,7 +31,10 @@ namespace BrainyOgrasm
 
             images = new ListImages();
             images2 = new ListImages();
+            mainImages = new List<Image>();
             rNumber = new Random();
+
+
             this.DoubleBuffered = true;
             count = 0;
             stream = null;
@@ -45,8 +48,8 @@ namespace BrainyOgrasm
                 stream.Dispose();
             }
             catch (FileNotFoundException)
-            {
-
+            { 
+                users = new List<User>();
             }
             catch (Exception)
             {
@@ -54,51 +57,51 @@ namespace BrainyOgrasm
             }
 
             users.Sort();
-            countNumber = 1;
-
-            ImagePath = @"..\..\Images\" + 15 + ".jpg";
 
             pbLogoOfTheGame.SizeMode = PictureBoxSizeMode.StretchImage;
             pbLogoOfTheGame.BorderStyle = BorderStyle.Fixed3D;
-            pbLogoOfTheGame.Image = Image.FromFile(ImagePath);
+            pbLogoOfTheGame.Image = Properties.Resources._6;
             this.MaximizeBox = false;
+
+            FillMainImages();
 
             MoveImages.Enabled = true;
             MoveImages.Start();
+            
+        }
+        private void FillMainImages()
+        {
+            mainImages.Add(Properties.Resources._1);
+            mainImages.Add(Properties.Resources._2);
+            mainImages.Add(Properties.Resources._3);
+            mainImages.Add(Properties.Resources._4);
+            mainImages.Add(Properties.Resources._5);
+            mainImages.Add(Properties.Resources._6);
+            mainImages.Add(Properties.Resources._7);
+            mainImages.Add(Properties.Resources._8);
+            mainImages.Add(Properties.Resources._9);
+            mainImages.Add(Properties.Resources._10);
+            mainImages.Add(Properties.Resources._11);
+            mainImages.Add(Properties.Resources._12);
+
         }
         private void MoveImages_Tick(object sender, EventArgs e)
         {
             if (count % 1000 == 0)
             {
-                ImagePath = null;
-                if (countNumber == 19)
-                {
-                    countNumber = 1;
-                    images.Images.Clear();
-                }
-                else
-                {
-                    if (countNumber == 5)
-                        ImagePath = @"..\..\Images\" + countNumber + ".png";
-                    else
-                    {
-                        ImagePath = @"..\..\Images\" + countNumber + ".jpg";
-                    }
-                    images.AddImage(new ImageBox(new Point(rNumber.Next(panelLeft.Location.X - 10, panelLeft.Location.X + 50), panelLeft.Location.Y - 40), ImagePath));
-                    images2.AddImage(new ImageBox(new Point(rNumber.Next(panelRight.Location.X - 10, panelRight.Location.X + 50), panelRight.Location.Y - 40), ImagePath));
-                    countNumber++;
-                }
+
+                images.AddImage(new ImageBox(new Point(rNumber.Next(panelLeft.Location.X - 10,
+                    panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 12)]));
+
             }
             count += 500;
             images.MoveImages(panelLeft.Height);
-            images2.MoveImages(panelRight.Height);
             Invalidate(true);
         }
 
         private void PanelsLeftRight_DrawImages(object sender, PaintEventArgs e)
         {
             images.DrawImages(e.Graphics);
-            images2.DrawImages(e.Graphics);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

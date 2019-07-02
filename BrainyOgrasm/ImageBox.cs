@@ -14,9 +14,9 @@ namespace BrainyOgrasm
         public const int ImageWidth = 30;
         public const int ImageHeight = 30;
 
-        public ImageBox(Point imageLocation, String Path)
+        public ImageBox(Point imageLocation, Image img)
         {
-            OriginalImage = Image.FromFile(Path);
+            OriginalImage = img;
             ImageLocation = imageLocation;
         }
 

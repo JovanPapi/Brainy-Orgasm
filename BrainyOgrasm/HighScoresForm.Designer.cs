@@ -30,8 +30,8 @@
         {
             this.dgvUsersScores = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbPornStars = new System.Windows.Forms.RadioButton();
-            this.rbDinosaurs = new System.Windows.Forms.RadioButton();
+            this.rbVisualStudio = new System.Windows.Forms.RadioButton();
+            this.rbScientists = new System.Windows.Forms.RadioButton();
             this.rbUniverse = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsersScores)).BeginInit();
             this.SuspendLayout();
@@ -43,42 +43,43 @@
             this.dgvUsersScores.Name = "dgvUsersScores";
             this.dgvUsersScores.Size = new System.Drawing.Size(243, 135);
             this.dgvUsersScores.TabIndex = 10;
+            this.dgvUsersScores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsersScores_CellContentClick_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F);
-            this.label1.Location = new System.Drawing.Point(9, 35);
+            this.label1.Location = new System.Drawing.Point(11, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "User - Score :";
             // 
-            // rbPornStars
+            // rbVisualStudio
             // 
-            this.rbPornStars.AutoSize = true;
-            this.rbPornStars.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbPornStars.Location = new System.Drawing.Point(182, 12);
-            this.rbPornStars.Name = "rbPornStars";
-            this.rbPornStars.Size = new System.Drawing.Size(80, 19);
-            this.rbPornStars.TabIndex = 8;
-            this.rbPornStars.TabStop = true;
-            this.rbPornStars.Text = "PornStars";
-            this.rbPornStars.UseVisualStyleBackColor = true;
-            this.rbPornStars.CheckedChanged += new System.EventHandler(this.GameTypeButtons_CheckedChanged);
+            this.rbVisualStudio.AutoSize = true;
+            this.rbVisualStudio.Font = new System.Drawing.Font("Arial", 9F);
+            this.rbVisualStudio.Location = new System.Drawing.Point(164, 12);
+            this.rbVisualStudio.Name = "rbVisualStudio";
+            this.rbVisualStudio.Size = new System.Drawing.Size(94, 19);
+            this.rbVisualStudio.TabIndex = 8;
+            this.rbVisualStudio.TabStop = true;
+            this.rbVisualStudio.Text = "VisualStudio";
+            this.rbVisualStudio.UseVisualStyleBackColor = true;
+            this.rbVisualStudio.CheckedChanged += new System.EventHandler(this.GameTypeButtons_CheckedChanged);
             // 
-            // rbDinosaurs
+            // rbScientists
             // 
-            this.rbDinosaurs.AutoSize = true;
-            this.rbDinosaurs.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbDinosaurs.Location = new System.Drawing.Point(92, 12);
-            this.rbDinosaurs.Name = "rbDinosaurs";
-            this.rbDinosaurs.Size = new System.Drawing.Size(83, 19);
-            this.rbDinosaurs.TabIndex = 7;
-            this.rbDinosaurs.TabStop = true;
-            this.rbDinosaurs.Text = "Dinosaurs";
-            this.rbDinosaurs.UseVisualStyleBackColor = true;
-            this.rbDinosaurs.CheckedChanged += new System.EventHandler(this.GameTypeButtons_CheckedChanged);
+            this.rbScientists.AutoSize = true;
+            this.rbScientists.Font = new System.Drawing.Font("Arial", 9F);
+            this.rbScientists.Location = new System.Drawing.Point(86, 12);
+            this.rbScientists.Name = "rbScientists";
+            this.rbScientists.Size = new System.Drawing.Size(79, 19);
+            this.rbScientists.TabIndex = 7;
+            this.rbScientists.TabStop = true;
+            this.rbScientists.Text = "Scientists";
+            this.rbScientists.UseVisualStyleBackColor = true;
+            this.rbScientists.CheckedChanged += new System.EventHandler(this.GameTypeButtons_CheckedChanged);
             // 
             // rbUniverse
             // 
@@ -100,8 +101,8 @@
             this.ClientSize = new System.Drawing.Size(266, 202);
             this.Controls.Add(this.dgvUsersScores);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rbPornStars);
-            this.Controls.Add(this.rbDinosaurs);
+            this.Controls.Add(this.rbVisualStudio);
+            this.Controls.Add(this.rbScientists);
             this.Controls.Add(this.rbUniverse);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HighScoresForm";
@@ -116,8 +117,8 @@
 
         private System.Windows.Forms.DataGridView dgvUsersScores;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rbPornStars;
-        private System.Windows.Forms.RadioButton rbDinosaurs;
+        private System.Windows.Forms.RadioButton rbVisualStudio;
+        private System.Windows.Forms.RadioButton rbScientists;
         private System.Windows.Forms.RadioButton rbUniverse;
     }
 }

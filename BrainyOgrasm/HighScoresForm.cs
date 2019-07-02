@@ -23,7 +23,7 @@ namespace BrainyOgrasm
             this.MaximizeBox = false;
             dgvUsersScores.ReadOnly = true;
             dgvUsersScores.ScrollBars = ScrollBars.None;
-
+            dgvUsersScores.ClearSelection();
         }
 
         private void GameTypeButtons_CheckedChanged(object sender, EventArgs e)
@@ -34,25 +34,25 @@ namespace BrainyOgrasm
             {
                 foreach (User us in MainForm.users)
                 {
-                    if (us.TypeOfGame.Equals("Universe"))
+                    if (us.TypeOfGame == Mode.Universe)
                     {
                         secondaryUsers.Add(us);
                     }
                 }
             }
-            else if (rbDinosaurs.Checked)
+            else if (rbScientists.Checked)
             {
                 foreach (User us in MainForm.users)
                 {
-                    if (us.TypeOfGame.Equals("Dinosaurs"))
+                    if (us.TypeOfGame == Mode.Scientists)
                         secondaryUsers.Add(us);
                 }
             }
-            else if (rbPornStars.Checked)
+            else if (rbVisualStudio.Checked)
             {
                 foreach (User us in MainForm.users)
                 {
-                    if (us.TypeOfGame.Equals("Porn Stars"))
+                    if (us.TypeOfGame == Mode.VisualStudio)
                         secondaryUsers.Add(us);
                 }
             }
@@ -61,8 +61,16 @@ namespace BrainyOgrasm
             dgvUsersScores.DataSource = secondaryUsers;
             dgvUsersScores.Columns.Remove("TypeOfGame");
             dgvUsersScores.Columns.Remove("LivesLeft");
+            dgvUsersScores.Columns.Remove("Collector");
             this.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 125;
             dgvUsersScores.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 27;
+        }
+        private void dgvUsersScores_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex < 0 || e.RowIndex < 0)
+            {
+                return;
+            }
         }
     }
 }

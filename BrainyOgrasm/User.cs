@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    [Serializable]
     public enum Mode
     {
         Universe,
@@ -22,9 +23,9 @@ namespace BrainyOgrasm
         public int LivesLeft { get; set; }
 
         public Collector Collector { get; set; }
-        public string TypeOfGame { get; set; }
+        public Mode TypeOfGame { get; set; }
 
-        public User(string UserName, string TypeOfGame)
+        public User(string UserName, Mode TypeOfGame)
         {
             this.TypeOfGame = TypeOfGame;
             this.Name = UserName;

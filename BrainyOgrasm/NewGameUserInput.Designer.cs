@@ -31,8 +31,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.cbCheckAge = new System.Windows.Forms.CheckBox();
-            this.rbPornStars = new System.Windows.Forms.RadioButton();
-            this.rbDinosaurs = new System.Windows.Forms.RadioButton();
+            this.rbVisualStudio = new System.Windows.Forms.RadioButton();
+            this.rbScientists = new System.Windows.Forms.RadioButton();
             this.rbUniverse = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.rtbPlayerName = new System.Windows.Forms.RichTextBox();
@@ -69,35 +69,35 @@
             this.cbCheckAge.Font = new System.Drawing.Font("Arial", 10F);
             this.cbCheckAge.Location = new System.Drawing.Point(17, 116);
             this.cbCheckAge.Name = "cbCheckAge";
-            this.cbCheckAge.Size = new System.Drawing.Size(87, 20);
+            this.cbCheckAge.Size = new System.Drawing.Size(105, 20);
             this.cbCheckAge.TabIndex = 10;
-            this.cbCheckAge.Text = "Above 18";
+            this.cbCheckAge.Text = "Programmer";
             this.cbCheckAge.UseVisualStyleBackColor = true;
             this.cbCheckAge.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // rbPornStars
+            // rbVisualStudio
             // 
-            this.rbPornStars.AutoSize = true;
-            this.rbPornStars.Font = new System.Drawing.Font("Arial", 10F);
-            this.rbPornStars.Location = new System.Drawing.Point(16, 194);
-            this.rbPornStars.Name = "rbPornStars";
-            this.rbPornStars.Size = new System.Drawing.Size(93, 20);
-            this.rbPornStars.TabIndex = 13;
-            this.rbPornStars.TabStop = true;
-            this.rbPornStars.Text = "Porn Stars";
-            this.rbPornStars.UseVisualStyleBackColor = true;
+            this.rbVisualStudio.AutoSize = true;
+            this.rbVisualStudio.Font = new System.Drawing.Font("Arial", 10F);
+            this.rbVisualStudio.Location = new System.Drawing.Point(16, 194);
+            this.rbVisualStudio.Name = "rbVisualStudio";
+            this.rbVisualStudio.Size = new System.Drawing.Size(104, 20);
+            this.rbVisualStudio.TabIndex = 13;
+            this.rbVisualStudio.TabStop = true;
+            this.rbVisualStudio.Text = "VisualStudio";
+            this.rbVisualStudio.UseVisualStyleBackColor = true;
             // 
-            // rbDinosaurs
+            // rbScientists
             // 
-            this.rbDinosaurs.AutoSize = true;
-            this.rbDinosaurs.Font = new System.Drawing.Font("Arial", 10F);
-            this.rbDinosaurs.Location = new System.Drawing.Point(16, 168);
-            this.rbDinosaurs.Name = "rbDinosaurs";
-            this.rbDinosaurs.Size = new System.Drawing.Size(90, 20);
-            this.rbDinosaurs.TabIndex = 12;
-            this.rbDinosaurs.TabStop = true;
-            this.rbDinosaurs.Text = "Dinosaurs";
-            this.rbDinosaurs.UseVisualStyleBackColor = true;
+            this.rbScientists.AutoSize = true;
+            this.rbScientists.Font = new System.Drawing.Font("Arial", 10F);
+            this.rbScientists.Location = new System.Drawing.Point(16, 168);
+            this.rbScientists.Name = "rbScientists";
+            this.rbScientists.Size = new System.Drawing.Size(86, 20);
+            this.rbScientists.TabIndex = 12;
+            this.rbScientists.TabStop = true;
+            this.rbScientists.Text = "Scientists";
+            this.rbScientists.UseVisualStyleBackColor = true;
             // 
             // rbUniverse
             // 
@@ -162,8 +162,8 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.cbCheckAge);
-            this.Controls.Add(this.rbPornStars);
-            this.Controls.Add(this.rbDinosaurs);
+            this.Controls.Add(this.rbVisualStudio);
+            this.Controls.Add(this.rbScientists);
             this.Controls.Add(this.rbUniverse);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rtbPlayerName);
@@ -181,8 +181,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.CheckBox cbCheckAge;
-        private System.Windows.Forms.RadioButton rbPornStars;
-        private System.Windows.Forms.RadioButton rbDinosaurs;
+        private System.Windows.Forms.RadioButton rbVisualStudio;
+        private System.Windows.Forms.RadioButton rbScientists;
         private System.Windows.Forms.RadioButton rbUniverse;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rtbPlayerName;

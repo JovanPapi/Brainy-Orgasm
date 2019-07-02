@@ -16,18 +16,18 @@ namespace BrainyOgrasm
         public NewGameUserInput()
         {
             InitializeComponent();
-            rbPornStars.Visible = false;
+            rbVisualStudio.Visible = false;
             this.MaximizeBox = false;
 
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            rbPornStars.Checked = false;
+            rbVisualStudio.Checked = false;
             if (cbCheckAge.Checked)
-                rbPornStars.Visible = true;
+                rbVisualStudio.Visible = true;
             else
-                rbPornStars.Visible = false;
+                rbVisualStudio.Visible = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -43,20 +43,20 @@ namespace BrainyOgrasm
         }
         public bool Validation()
         {
-            if (rtbPlayerName.Text == "" && !rbPornStars.Checked
-                && !rbUniverse.Checked && !rbDinosaurs.Checked)
+            if (rtbPlayerName.Text == "" && !rbVisualStudio.Checked
+                && !rbUniverse.Checked && !rbScientists.Checked)
             {
                 lblValidationText.Text = "Enter your player name and select\na game type to continue.";
                 return false;
             }
-            else if (rtbPlayerName.Text != "" && (!rbPornStars.Checked
-                && !rbUniverse.Checked && !rbDinosaurs.Checked))
+            else if (rtbPlayerName.Text != "" && (!rbVisualStudio.Checked
+                && !rbUniverse.Checked && !rbScientists.Checked))
             {
                 lblValidationText.Text = "Select a game type to continue.";
                 return false;
             }
-            else if (rtbPlayerName.Text == "" && (rbPornStars.Checked
-                || rbUniverse.Checked || rbDinosaurs.Checked))
+            else if (rtbPlayerName.Text == "" && (rbVisualStudio.Checked
+                || rbUniverse.Checked || rbScientists.Checked))
             {
                 lblValidationText.Text = "Enter your player name to continue.";
                 return false;
@@ -64,15 +64,14 @@ namespace BrainyOgrasm
 
             return true;
         }
-        private string TypeOfGame()
+        private Mode TypeOfGame()
         {
-            if (rbDinosaurs.Checked)
-                return rbDinosaurs.Text;
-            else if (rbPornStars.Checked)
-                return rbPornStars.Text;
-            else if (rbUniverse.Checked)
-                return rbUniverse.Text;
-            return null;
+            if (rbScientists.Checked)
+                return Mode.Scientists;
+            else if (rbVisualStudio.Checked)
+                return Mode.VisualStudio;
+            return Mode.Universe;
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

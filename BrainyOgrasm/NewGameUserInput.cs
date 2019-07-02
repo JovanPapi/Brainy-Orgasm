@@ -18,7 +18,6 @@ namespace BrainyOgrasm
             InitializeComponent();
             rbVisualStudio.Visible = false;
             this.MaximizeBox = false;
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +34,15 @@ namespace BrainyOgrasm
             if (Validation())
             {
                 user = new User(rtbPlayerName.Text, TypeOfGame());
+                if (MainForm.users.Contains(user))
+                {
+                    MessageBox.Show("The username " + user.Name + " is taken!");
+                    rtbPlayerName.Select(0, rtbPlayerName.Text.Length);
+                    return;
+                }
+                GameForm gf = new GameForm(user);
+                gf.ShowDialog();
+                MainForm.users.Add(user);
                 DialogResult = DialogResult.OK;
             }
             else

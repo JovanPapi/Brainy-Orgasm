@@ -1,35 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
-    [Serializable]
-    public class Users : IEquatable<Users>, IComparable<Users>
+    public enum Mode
     {
-        public string UserName { get; set; }
+        Universe,
+        Scientists,
+        VisualStudio
+    }
+
+    [Serializable]
+    public class User : IEquatable<User>, IComparable<User>
+    {
+        public string Name { get; set; }
         public int Points { get; set; }
         public int LivesLeft { get; set; }
+
+        public Collector Collector { get; set; }
         public string TypeOfGame { get; set; }
 
-        public Users(string UserName, string TypeOfGame)
+        public User(string UserName, string TypeOfGame)
         {
-            this.UserName = UserName;
+            this.TypeOfGame = TypeOfGame;
+            this.Name = UserName;
             this.Points = 0;
             LivesLeft = 3;
-            this.TypeOfGame = TypeOfGame;
         }
 
-        public void IncresePoints()
-        {
-            Points++;
-        }
-        public void DecreaseLive()
-        {
-            LivesLeft--;
-        }
         public bool CheckLives()
         {
             return LivesLeft == 0;
@@ -37,17 +39,27 @@ namespace BrainyOgrasm
 
         public override string ToString()
         {
-            return String.Format("{0}  -  {1}", this.UserName, this.Points);
+            return String.Format("{0}  -  {1}", this.Name, this.Points);
         }
 
-        public bool Equals(Users other)
+        public bool Equals(User other)
         {
-            return this.UserName == other.UserName;
+            return this.Name == other.Name;
         }
 
-        public int CompareTo(Users other)
+        public int CompareTo(User other)
         {
             return this.Points - other.Points;
+        }
+
+        public void Move(Point newLocation)
+        {
+            Collector.Move(newLocation);
+        }
+
+        public void Draw(Graphics g)
+        {
+            Collector.Draw(g);
         }
     }
 }

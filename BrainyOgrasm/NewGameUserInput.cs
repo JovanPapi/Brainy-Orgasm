@@ -12,7 +12,7 @@ namespace BrainyOgrasm
 {
     public partial class NewGameUserInput : Form
     {
-        public Users user;
+        public User user;
         public NewGameUserInput()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace BrainyOgrasm
         {
             if (Validation())
             {
-                user = new Users(rtbPlayerName.Text, TypeOfGame());
+                user = new User(rtbPlayerName.Text, TypeOfGame());
                 DialogResult = DialogResult.OK;
 
             }

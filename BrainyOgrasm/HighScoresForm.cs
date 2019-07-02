@@ -15,11 +15,11 @@ namespace BrainyOgrasm
 {
     public partial class HighScoresForm : Form
     {
-        private List<Users> secondaryUsers;
+        private List<User> secondaryUsers;
         public HighScoresForm()
         {
             InitializeComponent();
-            secondaryUsers = new List<Users>();
+            secondaryUsers = new List<User>();
             this.MaximizeBox = false;
             dgvUsersScores.ReadOnly = true;
             dgvUsersScores.ScrollBars = ScrollBars.None;
@@ -32,7 +32,7 @@ namespace BrainyOgrasm
 
             if (rbUniverse.Checked)
             {
-                foreach (Users us in MainForm.users)
+                foreach (User us in MainForm.users)
                 {
                     if (us.TypeOfGame.Equals("Universe"))
                     {
@@ -42,7 +42,7 @@ namespace BrainyOgrasm
             }
             else if (rbDinosaurs.Checked)
             {
-                foreach (Users us in MainForm.users)
+                foreach (User us in MainForm.users)
                 {
                     if (us.TypeOfGame.Equals("Dinosaurs"))
                         secondaryUsers.Add(us);
@@ -50,7 +50,7 @@ namespace BrainyOgrasm
             }
             else if (rbPornStars.Checked)
             {
-                foreach (Users us in MainForm.users)
+                foreach (User us in MainForm.users)
                 {
                     if (us.TypeOfGame.Equals("Porn Stars"))
                         secondaryUsers.Add(us);

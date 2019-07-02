@@ -20,7 +20,7 @@ namespace BrainyOgrasm
         private Random rNumber;
         private int countNumber;
         private string ImagePath;
-        public static List<Users> users = new List<Users>();
+        public static List<User> users = new List<User>();
         FileStream stream;
         private int count;
 
@@ -41,7 +41,7 @@ namespace BrainyOgrasm
             {
                 stream = new FileStream(FilePath, FileMode.Open);
                 IFormatter f = new BinaryFormatter();
-                users = (List<Users>)f.Deserialize(stream);
+                users = (List<User>)f.Deserialize(stream);
                 stream.Dispose();
             }
             catch (FileNotFoundException)

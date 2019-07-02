@@ -77,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UniverseGame.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="HighScoresForm.resx">
       <DependentUpon>HighScoresForm.cs</DependentUpon>
@@ -92,14 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,42 +114,74 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Images\1.png" />
+    <None Include="Resources\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\2.png" />
+    <None Include="Resources\blackHole.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\3.png" />
+    <None Include="Resources\blueGiant.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\4.png" />
+    <None Include="Resources\comet.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\5.jpg" />
+    <None Include="Resources\exo-planet.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\6.jpg" />
+    <None Include="Resources\fallingBlackHole.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\7.jpg" />
+    <None Include="Resources\galaxy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\8.jpg" />
+    <None Include="Resources\MilkyWay.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9.png" />
+    <None Include="Resources\nebula.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\10.png" />
+    <None Include="Resources\sun.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\11.jpg" />
+    <None Include="Resources\supernova.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\12.jpg" />
+    <None Include="Resources\NikolaTesla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OttoHahn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThomasEdison.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlbertEinstein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharlesDarwin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsaacNewton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesFeynman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesKepler.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarieCurie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

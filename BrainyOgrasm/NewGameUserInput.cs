@@ -36,7 +36,6 @@ namespace BrainyOgrasm
             {
                 user = new User(rtbPlayerName.Text, TypeOfGame());
                 DialogResult = DialogResult.OK;
-
             }
             else
                 return;
@@ -71,7 +70,6 @@ namespace BrainyOgrasm
             else if (rbVisualStudio.Checked)
                 return Mode.VisualStudio;
             return Mode.Universe;
-            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

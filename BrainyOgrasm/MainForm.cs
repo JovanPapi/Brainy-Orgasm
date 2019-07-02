@@ -60,7 +60,7 @@ namespace BrainyOgrasm
 
             pbLogoOfTheGame.SizeMode = PictureBoxSizeMode.StretchImage;
             pbLogoOfTheGame.BorderStyle = BorderStyle.Fixed3D;
-            pbLogoOfTheGame.Image = Properties.Resources._6;
+            pbLogoOfTheGame.Image = Properties.Resources.logo;
             this.MaximizeBox = false;
 
             FillMainImages();
@@ -71,19 +71,13 @@ namespace BrainyOgrasm
         }
         private void FillMainImages()
         {
-            mainImages.Add(Properties.Resources._1);
-            mainImages.Add(Properties.Resources._2);
-            mainImages.Add(Properties.Resources._3);
-            mainImages.Add(Properties.Resources._4);
-            mainImages.Add(Properties.Resources._5);
-            mainImages.Add(Properties.Resources._6);
-            mainImages.Add(Properties.Resources._7);
-            mainImages.Add(Properties.Resources._8);
-            mainImages.Add(Properties.Resources._9);
-            mainImages.Add(Properties.Resources._10);
-            mainImages.Add(Properties.Resources._11);
-            mainImages.Add(Properties.Resources._12);
-
+            mainImages.Add(Properties.Resources.AlbertEinstein);
+            mainImages.Add(Properties.Resources.comet);
+            mainImages.Add(Properties.Resources.emoji);
+            mainImages.Add(Properties.Resources.galaxy);
+            mainImages.Add(Properties.Resources.lamp);
+            mainImages.Add(Properties.Resources.MilkyWay);
+            mainImages.Add(Properties.Resources.nebula);
         }
         private void MoveImages_Tick(object sender, EventArgs e)
         {
@@ -91,7 +85,7 @@ namespace BrainyOgrasm
             {
 
                 images.AddImage(new ImageBox(new Point(rNumber.Next(panelLeft.Location.X - 10,
-                    panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 12)]));
+                    panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 7)]));
 
             }
             count += 500;

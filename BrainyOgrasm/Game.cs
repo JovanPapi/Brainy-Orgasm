@@ -26,6 +26,8 @@ namespace BrainyOgrasm
 
         public static Random r = new Random();
 
+        public Color ColorOfPoints { get; set; } // add this to the form
+
         public Game(User player)
         {
             Player = player;

@@ -136,14 +136,7 @@ namespace BrainyOgrasm
             NewGameUserInput form = new NewGameUserInput();
             if (form.ShowDialog() == DialogResult.OK)
             {
-                if (users.Contains(form.user))
-                {
-                    return;
-                }
-                else
-                    users.Add(form.user);
-                /*PlayGameForm form = new PlayGameForm();
-                form.ShowDialog();*/
+                
             }
             else
                 MoveImages.Enabled = true;

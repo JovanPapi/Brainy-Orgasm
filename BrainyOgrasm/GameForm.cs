@@ -14,6 +14,7 @@ namespace BrainyOgrasm
     {
         private Game scene;
         private int numOfTicks;
+        private bool forceQuit;
 
         public GameForm(User player)
         {
@@ -24,6 +25,7 @@ namespace BrainyOgrasm
             ChooseGameMode(player);
             this.DoubleBuffered = true;
             life1.Image = life2.Image = life3.Image = new Bitmap(Properties.Resources.emoji, life1.Size);
+            forceQuit = false;
         }
 
         private void ChooseGameMode(User player)
@@ -80,9 +82,14 @@ namespace BrainyOgrasm
 
         private void EndGame()
         {
-            DialogResult = DialogResult.OK;
             speedOfFallingObjects.Stop();
-            MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+            if (!forceQuit)
+            {
+                MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+                DialogResult = DialogResult.OK;
+            }
+            else
+                DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
@@ -92,6 +99,11 @@ namespace BrainyOgrasm
             if (scene.CheckCollision())
                 EndGame();
             Invalidate(true);
+        }
+
+        private void GameForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            forceQuit = true;
         }
     }
 }

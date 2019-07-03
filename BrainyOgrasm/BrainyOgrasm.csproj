@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collector.cs" />
+    <Compile Include="ContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentForm.Designer.cs">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FallingObject.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
@@ -92,6 +98,9 @@
     <Compile Include="UniverseGame.cs" />
     <Compile Include="User.cs" />
     <Compile Include="VSGame.cs" />
+    <EmbeddedResource Include="ContentForm.resx">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>

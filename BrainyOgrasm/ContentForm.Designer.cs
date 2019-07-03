@@ -30,62 +30,74 @@
         {
             this.txtMainContent = new System.Windows.Forms.TextBox();
             this.lblMainTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblSubDomainTitle = new System.Windows.Forms.Label();
+            this.pbOther = new System.Windows.Forms.PictureBox();
+            this.pbFalling = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOther)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFalling)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMainContent
             // 
             this.txtMainContent.Enabled = false;
             this.txtMainContent.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Italic);
-            this.txtMainContent.Location = new System.Drawing.Point(253, 166);
+            this.txtMainContent.Location = new System.Drawing.Point(12, 162);
             this.txtMainContent.Multiline = true;
             this.txtMainContent.Name = "txtMainContent";
-            this.txtMainContent.Size = new System.Drawing.Size(238, 302);
+            this.txtMainContent.Size = new System.Drawing.Size(305, 473);
             this.txtMainContent.TabIndex = 0;
-            this.txtMainContent.Text = "NEsto nesto";
+            this.txtMainContent.TextChanged += new System.EventHandler(this.txtMainContent_TextChanged);
             // 
             // lblMainTitle
             // 
             this.lblMainTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblMainTitle.Location = new System.Drawing.Point(87, 23);
+            this.lblMainTitle.Location = new System.Drawing.Point(12, 23);
             this.lblMainTitle.Name = "lblMainTitle";
-            this.lblMainTitle.Size = new System.Drawing.Size(345, 57);
+            this.lblMainTitle.Size = new System.Drawing.Size(584, 74);
             this.lblMainTitle.TabIndex = 1;
-            this.lblMainTitle.Text = "[Main Title]";
+            this.lblMainTitle.Text = "[MainTitle]";
             this.lblMainTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblSubDomainTitle
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 62);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "[SubDomainTitle]";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSubDomainTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSubDomainTitle.Location = new System.Drawing.Point(358, 110);
+            this.lblSubDomainTitle.Name = "lblSubDomainTitle";
+            this.lblSubDomainTitle.Size = new System.Drawing.Size(225, 48);
+            this.lblSubDomainTitle.TabIndex = 2;
+            this.lblSubDomainTitle.Text = "[SubDomainTitle]";
+            this.lblSubDomainTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // pbOther
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 166);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 188);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pbOther.Location = new System.Drawing.Point(358, 199);
+            this.pbOther.Name = "pbOther";
+            this.pbOther.Size = new System.Drawing.Size(225, 179);
+            this.pbOther.TabIndex = 3;
+            this.pbOther.TabStop = false;
+            // 
+            // pbFalling
+            // 
+            this.pbFalling.Location = new System.Drawing.Point(384, 433);
+            this.pbFalling.Name = "pbFalling";
+            this.pbFalling.Size = new System.Drawing.Size(169, 138);
+            this.pbFalling.TabIndex = 4;
+            this.pbFalling.TabStop = false;
             // 
             // ContentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 531);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(608, 656);
+            this.Controls.Add(this.pbFalling);
+            this.Controls.Add(this.pbOther);
+            this.Controls.Add(this.lblSubDomainTitle);
             this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.txtMainContent);
             this.Name = "ContentForm";
             this.Text = "ContentForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOther)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFalling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,7 +107,8 @@
 
         private System.Windows.Forms.TextBox txtMainContent;
         private System.Windows.Forms.Label lblMainTitle;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblSubDomainTitle;
+        private System.Windows.Forms.PictureBox pbOther;
+        private System.Windows.Forms.PictureBox pbFalling;
     }
 }

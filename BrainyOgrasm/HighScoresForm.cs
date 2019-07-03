@@ -16,6 +16,7 @@ namespace BrainyOgrasm
     public partial class HighScoresForm : Form
     {
         private List<User> secondaryUsers;
+        private int restHeight;
         public HighScoresForm()
         {
             InitializeComponent();
@@ -59,18 +60,11 @@ namespace BrainyOgrasm
 
             dgvUsersScores.DataSource = null;
             dgvUsersScores.DataSource = secondaryUsers;
+            dgvUsersScores.Height = (dgvUsersScores.Rows.Count + 2) * dgvUsersScores.RowTemplate.Height;
+            this.Height = dgvUsersScores.Height + 80;
             dgvUsersScores.Columns.Remove("TypeOfGame");
             dgvUsersScores.Columns.Remove("LivesLeft");
             dgvUsersScores.Columns.Remove("Collector");
-            this.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 125;
-            dgvUsersScores.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 27;
-        }
-        private void dgvUsersScores_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex < 0 || e.RowIndex < 0)
-            {
-                return;
-            }
         }
     }
 }

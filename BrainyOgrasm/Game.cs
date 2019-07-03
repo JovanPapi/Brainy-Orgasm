@@ -33,7 +33,6 @@ namespace BrainyOgrasm
             Player.Collector = new Collector();
             fallingObjects = new List<FallingObject>();
             pictures = new List<Bitmap>();
-            //CurrentLevel = 1;
             Speed = 50;
             SIZE_OF_BACKGROUND_IMAGE = new Size(WIDTH_OF_FORM, HEIGHT_OF_FORM);
         }

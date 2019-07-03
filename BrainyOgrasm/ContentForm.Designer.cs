@@ -46,7 +46,6 @@
             this.txtMainContent.Name = "txtMainContent";
             this.txtMainContent.Size = new System.Drawing.Size(305, 473);
             this.txtMainContent.TabIndex = 0;
-            this.txtMainContent.TextChanged += new System.EventHandler(this.txtMainContent_TextChanged);
             // 
             // lblMainTitle
             // 

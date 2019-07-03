@@ -12,20 +12,22 @@ namespace BrainyOgrasm
 {
     public partial class ContentForm : Form
     {
-        public ContentForm()
+        public ContentForm(Content content)
         {
             InitializeComponent();
-            txtMainContent.Text = ""; 
+            txtMainContent.Text = content.MainContent;
+            lblMainTitle.Text = content.MainTitle;
+            lblSubDomainTitle.Text = content.SubDomainTitle;
+            pbFalling.Image = content.FallingImage;
+            pbOther.Image = content.OtherImage;
+            ChangeSize();
         }
 
-        private void txtMainContent_TextChanged(object sender, EventArgs e)
+        private void ChangeSize()
         {
-            Size sifeOfContent = TextRenderer.MeasureText(txtMainContent.Text, txtMainContent.Font);
-            txtMainContent.Size = sifeOfContent;
-            if(txtMainContent.Height > this.Height)
-            {
-                
-            }
+            Size sizeOfContent = TextRenderer.MeasureText(txtMainContent.Text, txtMainContent.Font);
+            this.Height = sizeOfContent.Height + (this.Height - txtMainContent.Height);
+            txtMainContent.Size = sizeOfContent;
         }
     }
 }

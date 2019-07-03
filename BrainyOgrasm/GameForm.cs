@@ -36,6 +36,9 @@ namespace BrainyOgrasm
                 case Mode.Universe:
                     scene = new UniverseGame(player);
                     break;
+                case Mode.VisualStudio:
+                    scene = new VSGame(player);
+                    break;
             }
         }
 
@@ -46,6 +49,7 @@ namespace BrainyOgrasm
             this.BackgroundImage = scene.BackgroundImage;
             this.Text = scene.Player.TypeOfGame.ToString();
             lblPoints.Text = scene.Player.Points.ToString();
+            lblPoints.ForeColor = scene.ColorOfPoints;
             //Lives();
         }
 

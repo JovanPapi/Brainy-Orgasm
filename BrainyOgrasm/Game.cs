@@ -14,7 +14,6 @@ namespace BrainyOgrasm
 
         public User Player { get; set; }
         public Bitmap BackgroundImage { get; set; }
-        // public int CurrentLevel { get; set; }
         public int Speed { get; set; }
 
         public static int WIDTH_OF_FORM;

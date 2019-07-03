@@ -91,6 +91,7 @@
     <Compile Include="ScientistsGame.cs" />
     <Compile Include="UniverseGame.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="VSGame.cs" />
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,9 +204,6 @@
     <None Include="Resources\Java.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Java2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\NodeJs.png" />
   </ItemGroup>
   <ItemGroup>
@@ -215,9 +213,6 @@
     <None Include="Resources\PowerShell.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Python.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\RichGo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +220,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VisualBasic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualStudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroudOfVS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

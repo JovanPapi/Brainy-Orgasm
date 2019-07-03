@@ -356,5 +356,95 @@
     <Content Include="Content\Visual Studio.txt" />
     <Content Include="Content\Golden Record.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C#1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C++1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NodeJs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerShell1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Python1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichGo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruby1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualBasic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albert1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albert2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharlesDarwin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharlesDarwin2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edison1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edison2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GalileoGalilei1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GalileoGalilei2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesKepler1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesKepler2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marie2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OttoHan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OttoHan2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichardFeynam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichardFeynam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tesla1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tesla2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

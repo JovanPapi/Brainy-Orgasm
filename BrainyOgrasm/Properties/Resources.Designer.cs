@@ -73,6 +73,16 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroudOfVS {
+            get {
+                object obj = ResourceManager.GetObject("backgroudOfVS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blackHole {
             get {
                 object obj = ResourceManager.GetObject("blackHole", resourceCulture);
@@ -96,6 +106,26 @@ namespace BrainyOgrasm.Properties {
         internal static System.Drawing.Bitmap brain {
             get {
                 object obj = ResourceManager.GetObject("brain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap C_ {
+            get {
+                object obj = ResourceManager.GetObject("C_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap C__ {
+            get {
+                object obj = ResourceManager.GetObject("C__", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace BrainyOgrasm.Properties {
         internal static System.Drawing.Bitmap IsaacNewton {
             get {
                 object obj = ResourceManager.GetObject("IsaacNewton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Java {
+            get {
+                object obj = ResourceManager.GetObject("Java", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +293,59 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NodeJs {
+            get {
+                object obj = ResourceManager.GetObject("NodeJs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OttoHahn {
             get {
                 object obj = ResourceManager.GetObject("OttoHahn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PHP {
+            get {
+                object obj = ResourceManager.GetObject("PHP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PowerShell {
+            get {
+                object obj = ResourceManager.GetObject("PowerShell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RichGo {
+            get {
+                object obj = ResourceManager.GetObject("RichGo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ruby {
+            get {
+                object obj = ResourceManager.GetObject("Ruby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +376,26 @@ namespace BrainyOgrasm.Properties {
         internal static System.Drawing.Bitmap ThomasEdison {
             get {
                 object obj = ResourceManager.GetObject("ThomasEdison", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VisualBasic {
+            get {
+                object obj = ResourceManager.GetObject("VisualBasic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualStudio {
+            get {
+                object obj = ResourceManager.GetObject("visualStudio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

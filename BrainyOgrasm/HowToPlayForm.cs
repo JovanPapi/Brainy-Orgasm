@@ -44,9 +44,11 @@ namespace BrainyOgrasm
                 "\r\nJovan Papalazoski " +
                 "\r\nMihail Papalazoski " +
                 "\r\nDejan Slamkov ";
-            
-            
-            
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

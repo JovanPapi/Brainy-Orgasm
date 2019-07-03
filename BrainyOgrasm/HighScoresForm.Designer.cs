@@ -39,20 +39,21 @@
             // dgvUsersScores
             // 
             this.dgvUsersScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsersScores.Location = new System.Drawing.Point(12, 62);
+
+            this.dgvUsersScores.Location = new System.Drawing.Point(16, 66);
+            this.dgvUsersScores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUsersScores.Name = "dgvUsersScores";
-            this.dgvUsersScores.Size = new System.Drawing.Size(243, 135);
+            this.dgvUsersScores.Size = new System.Drawing.Size(324, 166);
             this.dgvUsersScores.TabIndex = 10;
-            this.dgvUsersScores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsersScores_CellContentClick_1);
-            this.dgvUsersScores.Resize += new System.EventHandler(this.dgvUsersScores_Resize);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F);
-            this.label1.Location = new System.Drawing.Point(9, 43);
+            this.label1.Location = new System.Drawing.Point(15, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(113, 19);
             this.label1.TabIndex = 9;
             this.label1.Text = "User - Score :";
             // 
@@ -60,9 +61,10 @@
             // 
             this.rbVisualStudio.AutoSize = true;
             this.rbVisualStudio.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbVisualStudio.Location = new System.Drawing.Point(171, 12);
+            this.rbVisualStudio.Location = new System.Drawing.Point(219, 15);
+            this.rbVisualStudio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbVisualStudio.Name = "rbVisualStudio";
-            this.rbVisualStudio.Size = new System.Drawing.Size(94, 19);
+            this.rbVisualStudio.Size = new System.Drawing.Size(109, 21);
             this.rbVisualStudio.TabIndex = 8;
             this.rbVisualStudio.TabStop = true;
             this.rbVisualStudio.Text = "VisualStudio";
@@ -73,9 +75,10 @@
             // 
             this.rbScientists.AutoSize = true;
             this.rbScientists.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbScientists.Location = new System.Drawing.Point(86, 12);
+            this.rbScientists.Location = new System.Drawing.Point(115, 15);
+            this.rbScientists.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbScientists.Name = "rbScientists";
-            this.rbScientists.Size = new System.Drawing.Size(79, 19);
+            this.rbScientists.Size = new System.Drawing.Size(93, 21);
             this.rbScientists.TabIndex = 7;
             this.rbScientists.TabStop = true;
             this.rbScientists.Text = "Scientists";
@@ -86,9 +89,10 @@
             // 
             this.rbUniverse.AutoSize = true;
             this.rbUniverse.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbUniverse.Location = new System.Drawing.Point(12, 12);
+            this.rbUniverse.Location = new System.Drawing.Point(16, 15);
+            this.rbUniverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbUniverse.Name = "rbUniverse";
-            this.rbUniverse.Size = new System.Drawing.Size(74, 19);
+            this.rbUniverse.Size = new System.Drawing.Size(86, 21);
             this.rbUniverse.TabIndex = 6;
             this.rbUniverse.TabStop = true;
             this.rbUniverse.Text = "Universe";
@@ -97,15 +101,16 @@
             // 
             // HighScoresForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 210);
+            this.ClientSize = new System.Drawing.Size(355, 249);
             this.Controls.Add(this.dgvUsersScores);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbVisualStudio);
             this.Controls.Add(this.rbScientists);
             this.Controls.Add(this.rbUniverse);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HighScoresForm";
             this.Text = "High Scores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsersScores)).EndInit();

@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collector.cs" />
+    <Compile Include="ContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentForm.Designer.cs">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FallingObject.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
@@ -91,6 +97,10 @@
     <Compile Include="ScientistsGame.cs" />
     <Compile Include="UniverseGame.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="VSGame.cs" />
+    <EmbeddedResource Include="ContentForm.resx">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +202,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C#.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C++.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NodeJs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualBasic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualStudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroudOfVS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
             this.lblDev = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbGameModes
@@ -93,11 +94,22 @@
             this.lblDev.TabIndex = 8;
             this.lblDev.Text = "label3";
             // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(334, 499);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(93, 31);
+            this.btnOk.TabIndex = 9;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
             // HowToPlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 542);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lblDev);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.tbGameModes);
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblContent;
         private System.Windows.Forms.Label lblDev;
+        private System.Windows.Forms.Button btnOk;
     }
 }

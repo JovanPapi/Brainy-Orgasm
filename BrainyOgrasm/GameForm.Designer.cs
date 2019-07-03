@@ -95,6 +95,7 @@
             this.Controls.Add(this.life1);
             this.Name = "GameForm";
             this.Text = "GameForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameForm_FormClosing);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.life3)).EndInit();

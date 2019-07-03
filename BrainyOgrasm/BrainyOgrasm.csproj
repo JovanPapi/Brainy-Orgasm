@@ -237,5 +237,83 @@
   <ItemGroup>
     <None Include="Resources\backgroudOfVS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galileo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Python.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meteor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackHole1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackHole2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueGiant1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrabNebula1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrabNebula2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExoPlanet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExoPlanet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaxy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaxy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueGiant2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

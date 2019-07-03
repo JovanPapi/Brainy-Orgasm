@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collector.cs" />
+    <Compile Include="Content.cs" />
     <Compile Include="ContentForm.cs">
       <SubType>Form</SubType>
     </Compile>

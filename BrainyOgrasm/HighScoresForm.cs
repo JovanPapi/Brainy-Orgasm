@@ -16,7 +16,6 @@ namespace BrainyOgrasm
     public partial class HighScoresForm : Form
     {
         private List<User> secondaryUsers;
-        private int restHeight;
         public HighScoresForm()
         {
             InitializeComponent();

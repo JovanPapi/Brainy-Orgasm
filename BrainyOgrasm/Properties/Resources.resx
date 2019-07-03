@@ -187,4 +187,37 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="C_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C#.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C++.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Java" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Java.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Java2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Java2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NodeJs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeJs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PHP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PHP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerShell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Python" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Python.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichGo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VisualBasic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisualBasic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

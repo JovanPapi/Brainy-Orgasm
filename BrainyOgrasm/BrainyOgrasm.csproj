@@ -193,5 +193,38 @@
   <ItemGroup>
     <None Include="Resources\lamp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C#.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C++.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NodeJs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Python.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualBasic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,7 +43,7 @@ namespace BrainyOgrasm
                 GameForm gf = new GameForm(user);
                 gf.ShowDialog();
                 MainForm.users.Add(user);
-                DialogResult = DialogResult.OK;
+                DialogResult = DialogResult.Cancel;
             }
             else
                 return;

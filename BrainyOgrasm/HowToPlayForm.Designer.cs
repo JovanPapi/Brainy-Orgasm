@@ -32,6 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbGameRule = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblContent = new System.Windows.Forms.Label();
+            this.lblDev = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbGameModes
@@ -72,18 +74,39 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Game Rules";
             // 
+            // lblContent
+            // 
+            this.lblContent.AutoSize = true;
+            this.lblContent.Font = new System.Drawing.Font("Blackadder ITC", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContent.Location = new System.Drawing.Point(157, 452);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(0, 28);
+            this.lblContent.TabIndex = 7;
+            // 
+            // lblDev
+            // 
+            this.lblDev.AutoSize = true;
+            this.lblDev.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDev.Location = new System.Drawing.Point(6, 461);
+            this.lblDev.Name = "lblDev";
+            this.lblDev.Size = new System.Drawing.Size(49, 19);
+            this.lblDev.TabIndex = 8;
+            this.lblDev.Text = "label3";
+            // 
             // HowToPlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 457);
+            this.ClientSize = new System.Drawing.Size(438, 542);
+            this.Controls.Add(this.lblDev);
+            this.Controls.Add(this.lblContent);
             this.Controls.Add(this.tbGameModes);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbGameRule);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HowToPlayForm";
-            this.Text = "How To Play Form";
+            this.Text = "How To Play";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +118,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbGameRule;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblContent;
+        private System.Windows.Forms.Label lblDev;
     }
 }

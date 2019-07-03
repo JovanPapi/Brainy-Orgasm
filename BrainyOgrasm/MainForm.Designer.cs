@@ -44,7 +44,7 @@
             // btnHighScores
             // 
             this.btnHighScores.Font = new System.Drawing.Font("Arial", 15F);
-            this.btnHighScores.Location = new System.Drawing.Point(12, 203);
+            this.btnHighScores.Location = new System.Drawing.Point(11, 262);
             this.btnHighScores.Name = "btnHighScores";
             this.btnHighScores.Size = new System.Drawing.Size(344, 41);
             this.btnHighScores.TabIndex = 7;
@@ -73,7 +73,7 @@
             // btnHowToPlay
             // 
             this.btnHowToPlay.Font = new System.Drawing.Font("Arial", 15F);
-            this.btnHowToPlay.Location = new System.Drawing.Point(12, 262);
+            this.btnHowToPlay.Location = new System.Drawing.Point(11, 204);
             this.btnHowToPlay.Name = "btnHowToPlay";
             this.btnHowToPlay.Size = new System.Drawing.Size(344, 41);
             this.btnHowToPlay.TabIndex = 6;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.btnNewGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MainForm";
-            this.Text = "Main Form";
+            this.Text = "Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoOfTheGame)).EndInit();
             this.ResumeLayout(false);

@@ -32,14 +32,21 @@ namespace BrainyOgrasm
                 "1. Universe ---> In this game mode the objects represent bizzare yet beautiful and breathtaking things" +
                 " that dwell in the universe from the begging of time till now. On every ten points collected" +
                 " a message box will pop-up that shares additional info about the subject." +
-                "\r\n\r\n2. Dinosaurs ---> In this game mode the objects represents terrifying prehistoric monsters" +
-                " that dwelled the planet earth before 65 milion years ago. Unlock new monsters with every 10 points" +
-                " collected and see additional informaton for every of them!" +
-                "\r\n\r\n3. Porn stars ---> Just play it if you want to see it :)";
+                "\r\n\r\n2. Scientists ---> In this game mode the objects represents world famous Scientists" +
+                " that changed our world with their inventions." +
+                "\r\n\r\n3. Visual Studio ---> Play this mode to learn about new types of" +
+                " programming languages and a additional information about them!";
             tbGameModes.Select(0, 0);
             tbGameModes.ReadOnly = true;
             tbGameModes.BackColor = Color.LightGray;
 
+            lblDev.Text = "Developed by :" +
+                "\r\nJovan Papalazoski " +
+                "\r\nMihail Papalazoski " +
+                "\r\nDejan Slamkov ";
+            
+            
+            
         }
     }
 }

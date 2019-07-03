@@ -170,7 +170,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "NewGameUserInput";
-            this.Text = "New Game User Input";
+            this.Text = "New Game ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

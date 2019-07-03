@@ -46,7 +46,7 @@ namespace BrainyOgrasm
             this.BackgroundImage = scene.BackgroundImage;
             this.Text = scene.Player.TypeOfGame.ToString();
             lblPoints.Text = scene.Player.Points.ToString();
-            //Lives();
+            Lives();
         }
 
         private void Lives()
@@ -68,6 +68,7 @@ namespace BrainyOgrasm
             numOfTicks++;
             if (scene.Move() || scene.CheckCollision())
             {
+                Invalidate(true);
                 EndGame();
                 return;
             }

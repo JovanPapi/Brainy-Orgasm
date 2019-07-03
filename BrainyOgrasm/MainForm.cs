@@ -18,12 +18,11 @@ namespace BrainyOgrasm
         private ListImages images;
         private ListImages images2;
         private Random rNumber;
-        private string ImagePath;
         public static List<User> users;
         FileStream stream;
         private int count;
         private List<Image> mainImages;
-
+        public static bool enableTimer;
 
         public MainForm()
         {
@@ -33,7 +32,7 @@ namespace BrainyOgrasm
             images2 = new ListImages();
             mainImages = new List<Image>();
             rNumber = new Random();
-
+            enableTimer = false;
 
             this.DoubleBuffered = true;
             count = 0;
@@ -106,6 +105,7 @@ namespace BrainyOgrasm
         private void btnHighScores_Click(object sender, EventArgs e)
         {
             MoveImages.Enabled = false;
+            MainForm.enableTimer = false;
             HighScoresForm form = new HighScoresForm();
             if (form.ShowDialog() == DialogResult.Cancel)
                 MoveImages.Enabled = true;
@@ -134,20 +134,10 @@ namespace BrainyOgrasm
         {
             MoveImages.Enabled = false;
             NewGameUserInput form = new NewGameUserInput();
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-                if (users.Contains(form.user))
-                {
-                    return;
-                }
-                else
-                    users.Add(form.user);
-                /*PlayGameForm form = new PlayGameForm();
-                form.ShowDialog();*/
-            }
-            else
-                MoveImages.Enabled = true;
+            if (form.ShowDialog() == DialogResult.Cancel)
+                MoveImages.Enabled = true;    
         }
+
         private void btnHowToPlay_Click(object sender, EventArgs e)
         {
             MoveImages.Enabled = false;

@@ -62,8 +62,9 @@ namespace BrainyOgrasm
             dgvUsersScores.Columns.Remove("TypeOfGame");
             dgvUsersScores.Columns.Remove("LivesLeft");
             dgvUsersScores.Columns.Remove("Collector");
-            this.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 125;
-            dgvUsersScores.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 27;
+            int heightOfRest = this.Height - dgvUsersScores.Height;
+            this.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 150;
+            dgvUsersScores.Height = dgvUsersScores.ColumnHeadersHeight * dgvUsersScores.Rows.Count + 28;
         }
         private void dgvUsersScores_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -71,6 +72,12 @@ namespace BrainyOgrasm
             {
                 return;
             }
+        }
+
+        private void dgvUsersScores_Resize(object sender, EventArgs e)
+        {
+            if (dgvUsersScores.Height + 150 > this.Height)
+                this.Height = dgvUsersScores.Height;
         }
     }
 }

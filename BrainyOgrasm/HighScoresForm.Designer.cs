@@ -39,17 +39,18 @@
             // dgvUsersScores
             // 
             this.dgvUsersScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsersScores.Location = new System.Drawing.Point(12, 54);
+            this.dgvUsersScores.Location = new System.Drawing.Point(12, 62);
             this.dgvUsersScores.Name = "dgvUsersScores";
             this.dgvUsersScores.Size = new System.Drawing.Size(243, 135);
             this.dgvUsersScores.TabIndex = 10;
             this.dgvUsersScores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsersScores_CellContentClick_1);
+            this.dgvUsersScores.Resize += new System.EventHandler(this.dgvUsersScores_Resize);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F);
-            this.label1.Location = new System.Drawing.Point(11, 35);
+            this.label1.Location = new System.Drawing.Point(9, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 9;
@@ -59,7 +60,7 @@
             // 
             this.rbVisualStudio.AutoSize = true;
             this.rbVisualStudio.Font = new System.Drawing.Font("Arial", 9F);
-            this.rbVisualStudio.Location = new System.Drawing.Point(164, 12);
+            this.rbVisualStudio.Location = new System.Drawing.Point(171, 12);
             this.rbVisualStudio.Name = "rbVisualStudio";
             this.rbVisualStudio.Size = new System.Drawing.Size(94, 19);
             this.rbVisualStudio.TabIndex = 8;
@@ -98,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 202);
+            this.ClientSize = new System.Drawing.Size(267, 210);
             this.Controls.Add(this.dgvUsersScores);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbVisualStudio);
@@ -106,7 +107,7 @@
             this.Controls.Add(this.rbUniverse);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HighScoresForm";
-            this.Text = "High Scores Form";
+            this.Text = "High Scores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsersScores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

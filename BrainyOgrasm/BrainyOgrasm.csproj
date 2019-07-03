@@ -96,6 +96,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ScientistsGame.cs" />
+    <Compile Include="ShowContentException.cs" />
     <Compile Include="UniverseGame.cs" />
     <Compile Include="User.cs" />
     <Compile Include="VSGame.cs" />
@@ -235,7 +236,7 @@
     <None Include="Resources\visualStudio.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\backgroudOfVS.png" />
+    <None Include="Resources\backgroundOfVS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

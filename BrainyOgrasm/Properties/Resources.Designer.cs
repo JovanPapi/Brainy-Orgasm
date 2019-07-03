@@ -73,9 +73,9 @@ namespace BrainyOgrasm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backgroudOfVS {
+        internal static System.Drawing.Bitmap backgroundOfVS {
             get {
-                object obj = ResourceManager.GetObject("backgroudOfVS", resourceCulture);
+                object obj = ResourceManager.GetObject("backgroundOfVS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

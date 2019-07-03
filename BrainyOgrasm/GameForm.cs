@@ -19,6 +19,7 @@ namespace BrainyOgrasm
         public GameForm(User player)
         {
             InitializeComponent();
+            speedOfFallingObjects.Start();
             numOfTicks = 0;
             Game.HEIGHT_OF_FORM = Height;
             Game.WIDTH_OF_FORM = Width;
@@ -72,12 +73,21 @@ namespace BrainyOgrasm
                 scene.AddFallingObject();
             }
             numOfTicks++;
-            if (scene.Move() || scene.CheckCollision())
+            if (scene.Move())
             {
                 Invalidate(true);
                 EndGame();
                 return;
             }
+
+            try
+            {
+                scene.CheckCollision();
+            }
+            catch (ShowContentException)
+            {
+                ShowContent();
+            }     
             Invalidate(true);
         }
 
@@ -97,14 +107,51 @@ namespace BrainyOgrasm
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             scene.MovePlayer(e.Location);
-            if (scene.CheckCollision())
-                EndGame();
+            try
+            {
+                scene.CheckCollision();
+            }
+            catch (ShowContentException)
+            {
+                ShowContent();  
+            }
             Invalidate(true);
+        }
+
+        private void ShowContent()
+        {
+            speedOfFallingObjects.Stop();
+            ContentForm cf = new ContentForm(scene.ChooseContent());
+            cf.ShowDialog();
+            if (scene.Update())
+            {
+                Invalidate(true);
+                EndGame();
+                return;
+            }
+            speedOfFallingObjects.Start();
         }
 
         private void GameForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             forceQuit = true;
+        }
+
+        private void GameForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                if (speedOfFallingObjects.Enabled)
+                {
+                    speedOfFallingObjects.Stop();
+                    this.MouseMove -= Form1_MouseMove;
+                }
+                else
+                {
+                    speedOfFallingObjects.Start();
+                    this.MouseMove += Form1_MouseMove;
+                }
+            }
         }
     }
 }

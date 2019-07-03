@@ -50,7 +50,7 @@ namespace BrainyOgrasm
 
         public int CompareTo(User other)
         {
-            return this.Points - other.Points;
+            return -(this.Points - other.Points);
         }
 
         public void Move(Point newLocation)

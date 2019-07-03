@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace BrainyOgrasm
     {
         private List<FallingObject> fallingObjects;
         protected List<Bitmap> pictures;
+        protected Queue<ContentWrapper> pathsToContentFiles;
 
         public User Player { get; set; }
         public Bitmap BackgroundImage { get; set; }
@@ -119,6 +121,11 @@ namespace BrainyOgrasm
             Player.Collector.RectangleOfCollector = new Rectangle(Player.Collector.Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + 20,
                 Player.Collector.Location.Y - Game.SIZE_OF_COLLECTOR.Height / 2 + 35,
                 Player.Collector.Image.Size.Width - 35, Player.Collector.Image.Size.Height);
+        }
+
+        protected string ContentFromFile(string pathToFile)
+        {
+            return File.ReadAllText(pathToFile);
         }
 
         protected abstract void FillPictureList();

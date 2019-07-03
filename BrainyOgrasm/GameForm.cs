@@ -121,6 +121,7 @@ namespace BrainyOgrasm
         private void ShowContent()
         {
             speedOfFallingObjects.Stop();
+            Invalidate(true);
             ContentForm cf = new ContentForm(scene.ChooseContent());
             cf.ShowDialog();
             if (scene.Update())

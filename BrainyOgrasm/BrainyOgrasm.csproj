@@ -54,6 +54,7 @@
     <Compile Include="ContentForm.Designer.cs">
       <DependentUpon>ContentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContentWrapper.cs" />
     <Compile Include="FallingObject.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
@@ -315,6 +316,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BlueGiant2.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\Albert Einstein.txt" />
+    <Content Include="Content\Asteroid.txt" />
+    <Content Include="Content\Black Hole.txt" />
+    <Content Include="Content\Blue Giant.txt" />
+    <Content Include="Content\Brain.txt" />
+    <Content Include="Content\c#.txt" />
+    <Content Include="Content\C++.txt" />
+    <Content Include="Content\Charles Darwin.txt" />
+    <Content Include="Content\Comet.txt" />
+    <Content Include="Content\Emoji.txt" />
+    <Content Include="Content\Exo Planet.txt" />
+    <Content Include="Content\Galaxy.txt" />
+    <Content Include="Content\Galileo Galilei.txt" />
+    <Content Include="Content\Isaac Newton.txt" />
+    <Content Include="Content\java.txt" />
+    <Content Include="Content\Johannes Kepler.txt" />
+    <Content Include="Content\Lamp.txt" />
+    <Content Include="Content\Io Moon.txt" />
+    <Content Include="Content\Marie Curie.txt" />
+    <Content Include="Content\Milky Way.txt" />
+    <Content Include="Content\Nebula.txt" />
+    <Content Include="Content\Nikola Tesla.txt" />
+    <Content Include="Content\NodeJS.txt" />
+    <Content Include="Content\Otto Hahn.txt" />
+    <Content Include="Content\PHP.txt" />
+    <Content Include="Content\Powershell.txt" />
+    <Content Include="Content\Python.txt" />
+    <Content Include="Content\Richard Feynman.txt" />
+    <Content Include="Content\Richgo.txt" />
+    <Content Include="Content\Ruby.txt" />
+    <Content Include="Content\Supernova.txt" />
+    <Content Include="Content\The Sun.txt" />
+    <Content Include="Content\Thomas Edison.txt" />
+    <Content Include="Content\Visual Basic.txt" />
+    <Content Include="Content\Visual Studio.txt" />
+    <Content Include="Content\Golden Record.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,2 @@
+Node.js is an open-source. cross-platform javascript run-time enviroinment that executes javascript
+code server-side.

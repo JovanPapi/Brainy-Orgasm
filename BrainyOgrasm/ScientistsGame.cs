@@ -31,5 +31,10 @@ namespace BrainyOgrasm
             pictures.Add(new Bitmap(Properties.Resources.OttoHahn, SIZE_OF_FALLING_OBJECT));
             pictures.Add(new Bitmap(Properties.Resources.ThomasEdison, SIZE_OF_FALLING_OBJECT));
         }
+
+        public override Content ChooseContent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

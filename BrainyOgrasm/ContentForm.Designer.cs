@@ -94,7 +94,7 @@
             this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.txtMainContent);
             this.Name = "ContentForm";
-            this.Text = "ContentForm";
+            this.Text = "Content";
             ((System.ComponentModel.ISupportInitialize)(this.pbOther)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFalling)).EndInit();
             this.ResumeLayout(false);

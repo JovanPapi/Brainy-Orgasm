@@ -25,7 +25,7 @@ namespace BrainyOgrasm
 
         public static Random r = new Random();
 
-        public Color ColorOfPoints { get; set; } // add this to the form
+        public Color ColorOfPoints { get; set; }
 
         public Game(User player)
         {
@@ -71,7 +71,7 @@ namespace BrainyOgrasm
             Player.Move(newLocation);
         }
 
-        public bool CheckCollision()
+        public void CheckCollision()
         {
             for (int i = 0; i < fallingObjects.Count; i++)
             {
@@ -82,14 +82,19 @@ namespace BrainyOgrasm
                     Player.Points++;
                     if (Player.Points % 10 == 0)
                     {
-                        pictures.RemoveAt(0);
-                        if (ChangeOthers())
-                            return true;
-                        if (Player.Points % 30 == 0)
-                            Speed -= 10;
+                        throw new ShowContentException();
                     }
                 }
             }
+        }
+
+        public bool Update()
+        {
+            pictures.RemoveAt(0);
+            if (ChangeOthers())
+                return true;
+            if (Player.Points % 30 == 0)
+                Speed -= 10;
             return false;
         }
 
@@ -117,5 +122,6 @@ namespace BrainyOgrasm
         }
 
         protected abstract void FillPictureList();
+        public abstract Content ChooseContent();
     }
 }

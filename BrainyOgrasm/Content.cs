@@ -15,12 +15,13 @@ namespace BrainyOgrasm
         public Bitmap FallingImage { get; set; }
         public Bitmap OtherImage { get; set; }
 
-        public Content(string mainContent, string mainTitle, string subDomainTitle, Bitmap fallingImage)
+        public Content(string mainContent, string mainTitle, string subDomainTitle, Bitmap fallingImage, Bitmap otherImage)
         {
             MainContent = mainContent;
             MainTitle = mainTitle;
             SubDomainTitle = subDomainTitle;
             FallingImage = fallingImage;
+            OtherImage = otherImage;
         }
     }
 }

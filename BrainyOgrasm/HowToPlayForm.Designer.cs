@@ -40,40 +40,44 @@
             // tbGameModes
             // 
             this.tbGameModes.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGameModes.Location = new System.Drawing.Point(9, 220);
+            this.tbGameModes.Location = new System.Drawing.Point(12, 294);
+            this.tbGameModes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbGameModes.Multiline = true;
             this.tbGameModes.Name = "tbGameModes";
             this.tbGameModes.ReadOnly = true;
-            this.tbGameModes.Size = new System.Drawing.Size(418, 229);
+            this.tbGameModes.Size = new System.Drawing.Size(556, 281);
             this.tbGameModes.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 16F);
-            this.label2.Location = new System.Drawing.Point(12, 187);
+            this.label2.Location = new System.Drawing.Point(16, 253);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 30);
+            this.label2.Size = new System.Drawing.Size(174, 38);
             this.label2.TabIndex = 6;
             this.label2.Text = "Game Modes";
             // 
             // tbGameRule
             // 
             this.tbGameRule.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGameRule.Location = new System.Drawing.Point(9, 42);
+            this.tbGameRule.Location = new System.Drawing.Point(12, 52);
+            this.tbGameRule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbGameRule.Multiline = true;
             this.tbGameRule.Name = "tbGameRule";
             this.tbGameRule.ReadOnly = true;
-            this.tbGameRule.Size = new System.Drawing.Size(418, 142);
+            this.tbGameRule.Size = new System.Drawing.Size(556, 197);
             this.tbGameRule.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 30);
+            this.label1.Size = new System.Drawing.Size(160, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "Game Rules";
             // 
@@ -81,26 +85,29 @@
             // 
             this.lblContent.AutoSize = true;
             this.lblContent.Font = new System.Drawing.Font("Blackadder ITC", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContent.Location = new System.Drawing.Point(157, 452);
+            this.lblContent.Location = new System.Drawing.Point(209, 556);
+            this.lblContent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(0, 28);
+            this.lblContent.Size = new System.Drawing.Size(0, 34);
             this.lblContent.TabIndex = 7;
             // 
             // lblDev
             // 
             this.lblDev.AutoSize = true;
             this.lblDev.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDev.Location = new System.Drawing.Point(6, 461);
+            this.lblDev.Location = new System.Drawing.Point(8, 579);
+            this.lblDev.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDev.Name = "lblDev";
-            this.lblDev.Size = new System.Drawing.Size(49, 19);
+            this.lblDev.Size = new System.Drawing.Size(59, 24);
             this.lblDev.TabIndex = 8;
             this.lblDev.Text = "label3";
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(334, 499);
+            this.btnOk.Location = new System.Drawing.Point(444, 626);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(93, 31);
+            this.btnOk.Size = new System.Drawing.Size(124, 38);
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
@@ -108,9 +115,9 @@
             // 
             // HowToPlayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 542);
+            this.ClientSize = new System.Drawing.Size(584, 677);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lblDev);
             this.Controls.Add(this.lblContent);
@@ -119,6 +126,7 @@
             this.Controls.Add(this.tbGameRule);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HowToPlayForm";
             this.Text = "How To Play";
             this.ResumeLayout(false);

@@ -7,18 +7,24 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Class that represents the Universe Mode
+    /// </summary>
     public class UniverseGame : Game
     {
-
+        /// <summary>
+        /// Constuctor for UniverseGame
+        /// </summary>
+        /// <param name="player">The User that is currently playing</param>
         public UniverseGame(User player) : base(player)
         {
-            FillPictureList();
+            FillPicturesQueue();
             InitializeCollector();
             ColorOfPoints = Color.White;
             FillPaths();
         }
 
-        protected override void FillPictureList()
+        protected override void FillPicturesQueue()
         {
             Player.Collector.Image = new Bitmap(Properties.Resources.blackHole, SIZE_OF_COLLECTOR);
             BackgroundImage = new Bitmap(Properties.Resources.MilkyWay, SIZE_OF_BACKGROUND_IMAGE);

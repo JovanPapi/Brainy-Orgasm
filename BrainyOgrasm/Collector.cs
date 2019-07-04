@@ -7,16 +7,30 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Class that represents the object that the User is collecting the Falling Objects with
+    /// </summary>
     [Serializable]
     public class Collector
     {
+        // the bounds of the collector
         private int maxX, maxY;
         private int minX, minY;
 
+        /// <summary>
+        /// Gets or sets the current location of the Collector
+        /// </summary>
         public Point Location { get; set; }
+        /// <summary>
+        /// Gets or sets the current Rectangle of the Collector
+        /// </summary>
         public Rectangle Rectangle { get; set; }
+        /// <summary>
+        /// The image that represents the Collector
+        /// </summary>
         public Bitmap Image { get; set; }
 
+        // static variables for adjusting the rectangle of the image
         public static int PADDING_X = 20;
         public static int PADDING_Y = 35;
         public static int PADDING_WIDTH = 35;
@@ -27,15 +41,21 @@ namespace BrainyOgrasm
             Location = new Point(Game.WIDTH_OF_FORM / 2, minY);
         }
 
+        /// <summary>
+        /// Updates the info that is being affected by a resize of the GameForm
+        /// </summary>
         public void UpdateDataResize()
         {
             minY = Game.HEIGHT_OF_FORM - 100;
             maxY = Game.HEIGHT_OF_FORM - 85;
             minX = 40;
             maxX = Game.WIDTH_OF_FORM - 70;
-            Location = new Point(Game.WIDTH_OF_FORM / 2, minY);
         }
 
+        /// <summary>
+        /// Draws the Collector
+        /// </summary>
+        /// <param name="g">Graphics object</param>
         public void Draw(Graphics g)
         {
             g.DrawImageUnscaled(Image, Location.X - Game.SIZE_OF_COLLECTOR.Width / 2,
@@ -43,10 +63,15 @@ namespace BrainyOgrasm
                 Game.SIZE_OF_COLLECTOR.Width, Game.SIZE_OF_COLLECTOR.Height);
         }
 
+        /// <summary>
+        /// Checks if the new location is in bounds, and moves the Collector accordingly
+        /// </summary>
+        /// <param name="newLocation">The new location of the Collector</param>
         public void Move(Point newLocation)
         {
             int x = 0, y = 0;
- 
+            
+            // checks bounderies
             if (newLocation.X <= minX)
                 x = minX;
             else if (newLocation.X >= maxX)

@@ -7,18 +7,24 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Class that represents the Scientists Mode
+    /// </summary>
     public class ScientistsGame : Game
     {
-
+        /// <summary>
+        /// Constuctor for ScientistsGame
+        /// </summary>
+        /// <param name="player">The User that is currently playing</param>
         public ScientistsGame(User player) : base(player)
         {
-            FillPictureList();
+            FillPicturesQueue();
             InitializeCollector();
             ColorOfPoints = Color.Black;
             FillPaths();
         }
 
-        protected override void FillPictureList()
+        protected override void FillPicturesQueue()
         {
             Player.Collector.Image = new Bitmap(Properties.Resources.lamp, SIZE_OF_COLLECTOR);
             BackgroundImage = new Bitmap(Properties.Resources.brain, SIZE_OF_BACKGROUND_IMAGE);

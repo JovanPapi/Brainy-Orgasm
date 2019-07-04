@@ -51,7 +51,7 @@
             this.lblPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblPoints.ForeColor = System.Drawing.Color.White;
-            this.lblPoints.Location = new System.Drawing.Point(845, 15);
+            this.lblPoints.Location = new System.Drawing.Point(992, 9);
             this.lblPoints.Name = "lblPoints";
             this.lblPoints.Size = new System.Drawing.Size(27, 29);
             this.lblPoints.TabIndex = 8;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 490);
+            this.ClientSize = new System.Drawing.Size(1096, 526);
             this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.life3);
             this.Controls.Add(this.life2);

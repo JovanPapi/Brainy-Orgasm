@@ -26,7 +26,8 @@ namespace BrainyOgrasm
                 " On the bottom of the screen is a collector which the player is moving with the mouse and use" +
                 " the collector for collecting the items." + "The player can pause the game by pressing the space bar." +
                 "The player has three lives" +
-                " and by missing an item he loses one life. If he misses three items, the players game is over.";
+                " and by missing an item he loses one life. If he misses three items, the players game is over." + 
+                "You can also play in fullscreen mode.";
             tbGameRule.Select(0, 0);
 
             tbGameModes.Text =

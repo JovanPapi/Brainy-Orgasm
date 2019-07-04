@@ -7,17 +7,24 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Class that represents the Visual Studio Mode
+    /// </summary>
     class VSGame : Game
     {
+        /// <summary>
+        /// Constuctor for VSGame
+        /// </summary>
+        /// <param name="player">The User that is currently playing</param>
         public VSGame(User player) : base(player)
         {
-            FillPictureList();
+            FillPicturesQueue();
             InitializeCollector();
             ColorOfPoints = Color.White;
             FillPaths();
         }
 
-        protected override void FillPictureList()
+        protected override void FillPicturesQueue()
         {
             Player.Collector.Image = new Bitmap(Properties.Resources.visualStudio, SIZE_OF_COLLECTOR);
             BackgroundImage = new Bitmap(Properties.Resources.backgroundOfVS, SIZE_OF_BACKGROUND_IMAGE);

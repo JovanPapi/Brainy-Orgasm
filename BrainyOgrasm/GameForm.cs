@@ -27,6 +27,9 @@ namespace BrainyOgrasm
             this.DoubleBuffered = true;
             life1.Image = life2.Image = life3.Image = new Bitmap(Properties.Resources.emoji, life1.Size);
             forceQuit = false;
+            this.BackgroundImage = scene.BackgroundImage;
+            this.Text = scene.Player.TypeOfGame == Mode.VisualStudio ? "Visual Studio" : scene.Player.TypeOfGame.ToString();
+            lblPoints.ForeColor = scene.ColorOfPoints;
         }
 
         private void ChooseGameMode(User player)
@@ -49,11 +52,8 @@ namespace BrainyOgrasm
         {
             scene.Draw(e.Graphics);
             speedOfFallingObjects.Interval = scene.Speed;
-            this.BackgroundImage = scene.BackgroundImage;
-            this.Text = scene.Player.TypeOfGame.ToString();
             lblPoints.Text = scene.Player.Points.ToString();
             Lives();
-            lblPoints.ForeColor = scene.ColorOfPoints;
         }
 
         private void Lives()
@@ -96,7 +96,10 @@ namespace BrainyOgrasm
             speedOfFallingObjects.Stop();
             if (!forceQuit)
             {
-                MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+                if(scene.Player.Points < 200)
+                    MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+                else
+                    MessageBox.Show("Congratulations, you've finished this mode. You made 200 points!");
                 DialogResult = DialogResult.OK;
             }
             else
@@ -122,8 +125,12 @@ namespace BrainyOgrasm
         {
             speedOfFallingObjects.Stop();
             Invalidate(true);
+
+            this.Visible = false;
             ContentForm cf = new ContentForm(scene.ChooseContent());
             cf.ShowDialog();
+            this.Visible = true;
+
             if (scene.Update())
             {
                 Invalidate(true);

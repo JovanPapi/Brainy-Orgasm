@@ -40,8 +40,10 @@ namespace BrainyOgrasm
                     rtbPlayerName.Select(0, rtbPlayerName.Text.Length);
                     return;
                 }
+                this.Visible = false;
                 GameForm gf = new GameForm(user);
                 gf.ShowDialog();
+                this.Visible = true;
                 if (gf.DialogResult != DialogResult.Cancel)
                 {
                     MainForm.users.Add(user);

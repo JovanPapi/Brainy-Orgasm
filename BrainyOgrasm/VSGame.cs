@@ -35,16 +35,16 @@ namespace BrainyOgrasm
 
         protected override void FillPaths()
         {
-            pathsToContentFiles.Enqueue(new Content("c#.txt", Properties.Resources.C_1, Properties.Resources.C_));
-            pathsToContentFiles.Enqueue(new Content("C++.txt", Properties.Resources.C__1, Properties.Resources.C__));
-            pathsToContentFiles.Enqueue(new Content("Java.txt", Properties.Resources.Java1, Properties.Resources.Java));
-            pathsToContentFiles.Enqueue(new Content("NodeJS.txt", Properties.Resources.NodeJs1, Properties.Resources.NodeJs));
-            pathsToContentFiles.Enqueue(new Content("PHP.txt", Properties.Resources.PHP1, Properties.Resources.PHP));
-            pathsToContentFiles.Enqueue(new Content("PowerShell.txt", Properties.Resources.PowerShell1, Properties.Resources.PowerShell));
-            pathsToContentFiles.Enqueue(new Content("Rich GO.txt", Properties.Resources.RichGo1, Properties.Resources.RichGo));
-            pathsToContentFiles.Enqueue(new Content("Ruby.txt", Properties.Resources.Ruby1, Properties.Resources.Ruby));
-            pathsToContentFiles.Enqueue(new Content("Visual Basic.txt", Properties.Resources.VisualBasic1, Properties.Resources.VisualBasic));
-            pathsToContentFiles.Enqueue(new Content("Python.txt", Properties.Resources.Python1, Properties.Resources.Python));
+            contents.Enqueue(new Content("c#.txt", Properties.Resources.C_1, Properties.Resources.C_));
+            contents.Enqueue(new Content("C++.txt", Properties.Resources.C__1, Properties.Resources.C__));
+            contents.Enqueue(new Content("Java.txt", Properties.Resources.Java1, Properties.Resources.Java));
+            contents.Enqueue(new Content("NodeJS.txt", Properties.Resources.NodeJs1, Properties.Resources.NodeJs));
+            contents.Enqueue(new Content("PHP.txt", Properties.Resources.PHP1, Properties.Resources.PHP));
+            contents.Enqueue(new Content("PowerShell.txt", Properties.Resources.PowerShell1, Properties.Resources.PowerShell));
+            contents.Enqueue(new Content("Rich GO.txt", Properties.Resources.RichGo1, Properties.Resources.RichGo));
+            contents.Enqueue(new Content("Ruby.txt", Properties.Resources.Ruby1, Properties.Resources.Ruby));
+            contents.Enqueue(new Content("Visual Basic.txt", Properties.Resources.VisualBasic1, Properties.Resources.VisualBasic));
+            contents.Enqueue(new Content("Python.txt", Properties.Resources.Python1, Properties.Resources.Python));
         }
     }
 }

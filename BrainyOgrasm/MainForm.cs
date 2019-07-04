@@ -53,6 +53,7 @@ namespace BrainyOgrasm
             catch (Exception)
             {
                 MessageBox.Show("Game cannot be started");
+                this.Close();
             }
 
             pbLogoOfTheGame.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -139,9 +140,11 @@ namespace BrainyOgrasm
         private void btnHowToPlay_Click(object sender, EventArgs e)
         {
             MoveImages.Enabled = false;
+            this.Visible = false;
             HowToPlayForm form = new HowToPlayForm();
             if (form.ShowDialog() == DialogResult.Cancel)
                 MoveImages.Enabled = true;
+            this.Visible = true;
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)

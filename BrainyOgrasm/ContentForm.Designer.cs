@@ -62,7 +62,7 @@
             // 
             // pbOther
             // 
-            this.pbOther.Location = new System.Drawing.Point(275, 130);
+            this.pbOther.Location = new System.Drawing.Point(262, 130);
             this.pbOther.Margin = new System.Windows.Forms.Padding(2);
             this.pbOther.Name = "pbOther";
             this.pbOther.Size = new System.Drawing.Size(169, 145);
@@ -71,16 +71,16 @@
             // 
             // pbFalling
             // 
-            this.pbFalling.Location = new System.Drawing.Point(275, 310);
+            this.pbFalling.Location = new System.Drawing.Point(244, 302);
             this.pbFalling.Margin = new System.Windows.Forms.Padding(2);
             this.pbFalling.Name = "pbFalling";
-            this.pbFalling.Size = new System.Drawing.Size(169, 159);
+            this.pbFalling.Size = new System.Drawing.Size(208, 176);
             this.pbFalling.TabIndex = 4;
             this.pbFalling.TabStop = false;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(345, 483);
+            this.btnClose.Location = new System.Drawing.Point(353, 483);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(99, 33);
             this.btnClose.TabIndex = 5;

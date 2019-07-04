@@ -9,23 +9,29 @@ namespace BrainyOgrasm
 {
     public class FallingObject
     {
-        private Rectangle rectagnleOfObject;
+        private Rectangle rectangle;
         private Point location;
 
         public Bitmap Image { get; set; }
+        public bool Invisible { get; set; }
 
         public FallingObject(Bitmap image, Point location)
         {
             this.Image = image;
             this.location = location;
-            rectagnleOfObject = new Rectangle(location, image.Size);
+            rectangle = new Rectangle(location, image.Size);
+            Invisible = false;
         }
 
         public bool Move()
         {
             location = new Point(location.X, location.Y + 10);
-            rectagnleOfObject = new Rectangle(location, Image.Size);
-            if (location.Y + 50 >= Game.HEIGHT_OF_FORM)
+            rectangle = new Rectangle(location, Image.Size);
+
+            if (location.Y >= Game.HEIGHT_OF_FORM - 60)
+                Invisible = true;
+
+            if (location.Y + Game.SIZE_OF_FALLING_OBJECT.Height >= Game.HEIGHT_OF_FORM)
                 return true;
             return false;
         }
@@ -38,9 +44,7 @@ namespace BrainyOgrasm
 
         public bool Collide(Rectangle rectangleOfPlayer)
         {
-            //Rectangle tmp = new Rectangle(new Point(rectangleOfPlayer.X, rectangleOfPlayer.Y),
-            // new Size(rectangleOfPlayer.Width, rectangleOfPlayer.Height));
-            return rectagnleOfObject.IntersectsWith(rectangleOfPlayer);
+            return rectangle.IntersectsWith(rectangleOfPlayer);
         }
     }
 }

@@ -36,16 +36,16 @@ namespace BrainyOgrasm
 
         protected override void FillPaths()
         {
-            pathsToContentFiles.Enqueue(new Content("Black Hole.txt", Properties.Resources.BlackHole1, Properties.Resources.BlackHole2));
-            pathsToContentFiles.Enqueue(new Content("Exo Planet.txt", Properties.Resources.ExoPlanet1, Properties.Resources.ExoPlanet2));
-            pathsToContentFiles.Enqueue(new Content("Galaxy.txt", Properties.Resources.Galaxy1, Properties.Resources.Galaxy2));
-            pathsToContentFiles.Enqueue(new Content("The Sun.txt", Properties.Resources.Sun1, Properties.Resources.Sun2));
-            pathsToContentFiles.Enqueue(new Content("Blue Giant.txt", Properties.Resources.BlueGiant1, Properties.Resources.BlueGiant2));
-            pathsToContentFiles.Enqueue(new Content("Io Moon.txt", Properties.Resources.IoMoon1, Properties.Resources.IoMoon2));
-            pathsToContentFiles.Enqueue(new Content("Comet.txt", Properties.Resources.Comet1, Properties.Resources.Comet2));
-            pathsToContentFiles.Enqueue(new Content("Nebula.txt", Properties.Resources.CrabNebula1, Properties.Resources.CrabNebula2));
-            pathsToContentFiles.Enqueue(new Content("Golden Record.txt", Properties.Resources.GoldenDisk1, Properties.Resources.GoldenDisk2));
-            pathsToContentFiles.Enqueue(new Content("Asteroid.txt", Properties.Resources.Asteroid1, Properties.Resources.Asteroid2));
+            contents.Enqueue(new Content("Black Hole.txt", Properties.Resources.BlackHole1, Properties.Resources.BlackHole2));
+            contents.Enqueue(new Content("Exo Planet.txt", Properties.Resources.ExoPlanet1, Properties.Resources.ExoPlanet2));
+            contents.Enqueue(new Content("Galaxy.txt", Properties.Resources.Galaxy1, Properties.Resources.Galaxy2));
+            contents.Enqueue(new Content("The Sun.txt", Properties.Resources.Sun1, Properties.Resources.Sun2));
+            contents.Enqueue(new Content("Blue Giant.txt", Properties.Resources.BlueGiant1, Properties.Resources.BlueGiant2));
+            contents.Enqueue(new Content("Io Moon.txt", Properties.Resources.IoMoon1, Properties.Resources.IoMoon2));
+            contents.Enqueue(new Content("Comet.txt", Properties.Resources.Comet1, Properties.Resources.Comet2));
+            contents.Enqueue(new Content("Nebula.txt", Properties.Resources.CrabNebula1, Properties.Resources.CrabNebula2));
+            contents.Enqueue(new Content("Golden Record.txt", Properties.Resources.GoldenDisk1, Properties.Resources.GoldenDisk2));
+            contents.Enqueue(new Content("Asteroid.txt", Properties.Resources.Asteroid1, Properties.Resources.Asteroid2));
         }
     }
 }

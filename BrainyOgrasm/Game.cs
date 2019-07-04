@@ -12,11 +12,12 @@ namespace BrainyOgrasm
     {
         private List<FallingObject> fallingObjects;
         protected Queue<Bitmap> pictures;
-        protected Queue<Content> pathsToContentFiles;
+        protected Queue<Content> contents;
 
         public User Player { get; set; }
         public Bitmap BackgroundImage { get; set; }
         public int Speed { get; set; }
+        public Color ColorOfPoints { get; set; }
 
         public static int WIDTH_OF_FORM;
         public static int HEIGHT_OF_FORM;
@@ -27,15 +28,13 @@ namespace BrainyOgrasm
 
         public static Random r = new Random();
 
-        public Color ColorOfPoints { get; set; }
-
         public Game(User player)
         {
             Player = player;
             Player.Collector = new Collector();
             fallingObjects = new List<FallingObject>();
             pictures = new Queue<Bitmap>();
-            pathsToContentFiles = new Queue<Content>();
+            contents = new Queue<Content>();
             Speed = 50;
             SIZE_OF_BACKGROUND_IMAGE = new Size(WIDTH_OF_FORM, HEIGHT_OF_FORM);
         }
@@ -78,7 +77,7 @@ namespace BrainyOgrasm
         {
             for (int i = 0; i < fallingObjects.Count; i++)
             {
-                if (fallingObjects[i].Collide(Player.Collector.RectangleOfCollector))
+                if (fallingObjects[i].Collide(Player.Collector.Rectangle) && !fallingObjects[i].Invisible)
                 {
                     fallingObjects.RemoveAt(i);
                     i--;
@@ -119,7 +118,7 @@ namespace BrainyOgrasm
 
         protected void InitializeCollector()
         {
-            Player.Collector.RectangleOfCollector = new Rectangle(Player.Collector.Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + 20,
+            Player.Collector.Rectangle = new Rectangle(Player.Collector.Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + 20,
                 Player.Collector.Location.Y - Game.SIZE_OF_COLLECTOR.Height / 2 + 35,
                 Player.Collector.Image.Size.Width - 35, Player.Collector.Image.Size.Height);
         }
@@ -131,7 +130,7 @@ namespace BrainyOgrasm
 
         public Content ChooseContent()
         {
-            Content current = pathsToContentFiles.Dequeue();
+            Content current = contents.Dequeue();
             current.FillContent(ContentFromFile(@".\..\..\Content\"+current.PathToFile), Player.TypeOfGame);
             return current;
         }

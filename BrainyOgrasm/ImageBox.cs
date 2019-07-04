@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+
     public class ImageBox
     {
         public Point ImageLocation { get; set; }
@@ -20,11 +21,18 @@ namespace BrainyOgrasm
             ImageLocation = imageLocation;
         }
 
+        /// <summary>
+        /// Method for drawing an image
+        /// </summary>
+        /// <param name="g">Graphics object</param>
         public void DrawImage(Graphics g)
         {
             g.DrawImage(OriginalImage, ImageLocation.X, ImageLocation.Y, ImageWidth, ImageHeight);
         }
 
+        /// <summary>
+        /// Method for moving an image
+        /// </summary>
         public void MoveImageLocation()
         {
             this.ImageLocation = new Point(ImageLocation.X, ImageLocation.Y + 30);

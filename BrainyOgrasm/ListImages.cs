@@ -16,6 +16,10 @@ namespace BrainyOgrasm
             this.Images = new List<ImageBox>();
         }
 
+        /// <summary>
+        /// Method that lists all images and draws them
+        /// </summary>
+        /// <param name="g">Graphics object</param>
         public void DrawImages(Graphics g)
         {
             foreach (ImageBox im in Images)
@@ -24,6 +28,10 @@ namespace BrainyOgrasm
             }
         }
 
+        /// <summary>
+        /// Method that lists all images and moves them 
+        /// </summary>
+        /// <param name="panelHeight">The height of the panel</param>
         public void MoveImages(int panelHeight)
         {
             for (int i = 0; i < Images.Count; i++)
@@ -37,6 +45,10 @@ namespace BrainyOgrasm
             }
         }
 
+        /// <summary>
+        /// Method that adds one image in the list of images
+        /// </summary>
+        /// <param name="newImage">The image that is going to be shown on the panels</param>
         public void AddImage(ImageBox newImage)
         {
             Images.Add(newImage);

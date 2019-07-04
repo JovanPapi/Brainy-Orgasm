@@ -1,2 +1,7 @@
 Microsoft visual studio is an integrated development enviroinment from Microsoft. It is used to develop
-computer programs, as well as web sites, web apps, web services and mobile apps.
+computer programs, as well as web sites, web apps, web services and mobile apps. Visual Studio includes a code editor supporting
+IntelliSense as well as code refactoring. The integrated debugger works both as a source-level debugger and a machine-level
+debugger.
+Visual Studio supports 36 different programming languages and allows the code editor and debugger to support nearly any
+programming language, provided a language-specific service exist. Built-in languages include: C, C++, C#, F#, Visual Basic, Javascript
+etc....

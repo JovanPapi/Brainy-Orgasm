@@ -1,2 +1,5 @@
 Marie Sklodowska Curie (November 1867 - 4 Juli 1934) was a Polish and naturalized-French physicist
-and chemist who concluded pioneering research om radioactivity.
+and chemist who concluded pioneering research om radioactivity. After discovering the x-rays and uranium
+Curie influenced by this two new discoveries, decided look into uranium rays as a possible field of research
+for a thesis. She used an innovative technique to investigate samples. Using her housband's electrometer, she 
+discovered that uranium rays caused the air around a sample to conduct electricity.

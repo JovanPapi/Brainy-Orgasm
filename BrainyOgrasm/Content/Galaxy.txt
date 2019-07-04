@@ -1,2 +1,4 @@
 A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust and dark metter.
-The word galaxy is derived from the Greek "literaly milky" a reference to the Milky Way.
+The word galaxy is derived from the Greek "literaly milky" a reference to the Milky Way. Galaxies range in size 
+from dwarfs with just a few hundred million stars to giants with one hundred trillion stars, each orbiting its galaxy's 
+center of mass.

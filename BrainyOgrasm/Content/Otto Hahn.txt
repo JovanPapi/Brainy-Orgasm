@@ -1,2 +1,9 @@
 Otto Hahn was a German chemist and pioneer in the fields of radioactivity and radiochemistry. He
-is reffered to as the father of nuclear chemistry.
+is reffered to as the father of nuclear chemistry. Otto Hahn furthered the research begun by Enrico Fermi
+and his team in 1934 when they bombarded uranium with neutrons. Until 1938, it was believed that the elements
+with atomic numbers greater than 92 arose when uranium atoms were bombarded with neutrons.
+As a chemist, Hahn was reluctant to propose a revolutionary discovery in physics.
+However, Meitner and her nephew, the young physicist Otto Robert Frisch, in Sweden, came to the same conclusion (a "bursting") as 
+Hahn and were able, because they had a lead of time, to work out the first theoretical interpretation of nuclear fission – the term 
+that was coined by Frisch, and which subsequently became internationally known. Over the next few months, Frisch and Meitner 
+published two articles discussing and experimentally confirming this hypothesis.

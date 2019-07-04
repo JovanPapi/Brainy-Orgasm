@@ -1,3 +1,8 @@
 Thomas Alva Edison was an American inventor and buisnessman who has been described as America's
 greatest inventor. He developed many devices that greatly infuenced life around the world, including
 phonograph, the motion picture and the long-lasting, practical electric light bulb.
+In 1878, Edison began working on a system of electrical illumination, something he hoped could compete with gas and
+oil based lighting. After many experiments, first with carbon filaments and then with platinum and other metals, Edison
+returned to a carbon filament. The first successful test was on October 22, 1879 and it lasted 13.5 hours. Edison continued to
+improve this design and on November 4, 1879, filed for U.S. patent for an electric lamp using "a carbon filament or strip coiled
+and connected to platina contact wires".

@@ -1,2 +1,5 @@
 Powershell is a task automation and configuration management framework from Microsoft, consisting
-of a command-line shell and associated scripting language.
+of a command-line shell and associated scripting language. In PowerShell, administrative tasks are generally 
+performed by cmdlets (pronounced command-lets), which are specialized .NET classes implementing a particular operation. 
+These work by accessing data in different data stores, like the file system or registry, which are made available to 
+PowerShell via providers.

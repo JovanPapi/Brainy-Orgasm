@@ -1,3 +1,7 @@
 Richard Phillips Feynman (May 1918 -  15 February 1988) was an American theoretical physicist
 known for his work in the path integral formulation of quantum mechanics, the theory of quantum
-electrodynamics and the physics of the superfluidity of supercooled liquid  helium.
+electrodynamics and the physics of the superfluidity of supercooled liquid  helium. Feynman investigated the 
+physics of the superfluidity of supercooled liquid helium, where helium seems to display a complete lack of viscosity 
+when flowing. Faynman provided a quantum-mechanical explanation for the Soviet physicist Lev Landau's theory of superfluidity.
+Faynman inspired by a desire to quantize the Wheeler-Faynman absorber theory of electrodynamics, laid the groundwork for the path
+integral formulation and Faynman diagrams.

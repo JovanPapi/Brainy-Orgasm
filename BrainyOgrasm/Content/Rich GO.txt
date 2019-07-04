@@ -1,3 +1,5 @@
 Go is a programming language created at Google in 2009 by Robert Griesemer, Rob Pike and Ken
 Thompson. Go is a statically typed compiled language in the tradition of C with memory safety, garbage
-collector etc...
+collector etc... o was designed at Google in 2007 to improve programming productivity in an era of multicore, 
+networked machines and large codebases. The designers wanted to address criticism of other languages in use at Google, 
+but keep their useful characteristics:

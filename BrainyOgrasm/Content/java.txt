@@ -1,2 +1,5 @@
 Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented
-and specifically designed to have as few implementation dependencies as possible.
+and specifically designed to have as few implementation dependencies as possible. It is intended to let 
+application developers write once, run anywhere, meaning that compiled java code can run on all platforms
+that support java without the need for recompilation. Java applications are typically compiled to bytecode that can run on 
+any java virtual machine(JVM) regardless of the underlying computer architecture.

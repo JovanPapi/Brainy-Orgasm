@@ -1,3 +1,7 @@
 Johannes Kepler (December 1571 - 15 November 1630) was a German astronomer, mathematician
 and a astrologer. He is key figure in the 17th-century scientific revolution, best known for his laws
 of planetary motion.
+Kepler's first major astronomical work, Mysterium Cosmographicum, was the first published defense of
+the Copernican system. After failing to find unique arrangement of polygons that fit known astronomical
+observations(even with extra planets added to the system), Kepler began experimenting with 3-dimensional 
+polyhedra.

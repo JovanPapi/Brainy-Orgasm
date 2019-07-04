@@ -1,3 +1,6 @@
 The Milky Way is the galaxy that contains our Solar System. The descriptive "milky" is derived from
 the appearence from Earth of the galaxy - a band of light seen in the night sky formed from the stars
 that cannot be individually distinguished by the naked eye.
+The Milky Way is a barred spiral galaxy with a diameter between 150,000 and 200,000 light-years. It is 
+estimated to contain 100-400 billion stars and more than 100 billion planets.
+The Solar System is located at a radius of 26,490 light-years from the Galactic Center.

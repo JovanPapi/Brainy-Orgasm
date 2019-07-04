@@ -53,7 +53,9 @@ namespace BrainyOgrasm
             else
                 return;
         }
-        public bool Validation()
+
+        // Method that performs validation over controls of the form 
+        private bool Validation()
         {
             if (rtbPlayerName.Text == "" && !rbVisualStudio.Checked
                 && !rbUniverse.Checked && !rbScientists.Checked)
@@ -76,6 +78,8 @@ namespace BrainyOgrasm
 
             return true;
         }
+
+        // Method that returns Mode enum type for the mode that the user picked
         private Mode TypeOfGame()
         {
             if (rbScientists.Checked)

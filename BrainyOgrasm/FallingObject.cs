@@ -13,14 +13,14 @@ namespace BrainyOgrasm
         private Point location;
 
         public Bitmap Image { get; set; }
-        public bool Invisible { get; set; }
+        public bool Invincible { get; set; }
 
         public FallingObject(Bitmap image, Point location)
         {
             this.Image = image;
             this.location = location;
             rectangle = new Rectangle(location, image.Size);
-            Invisible = false;
+            Invincible = false;
         }
 
         public bool Move()
@@ -29,7 +29,7 @@ namespace BrainyOgrasm
             rectangle = new Rectangle(location, Image.Size);
 
             if (location.Y >= Game.HEIGHT_OF_FORM - 60)
-                Invisible = true;
+                Invincible = true;
 
             if (location.Y + Game.SIZE_OF_FALLING_OBJECT.Height >= Game.HEIGHT_OF_FORM)
                 return true;
@@ -45,6 +45,11 @@ namespace BrainyOgrasm
         public bool Collide(Rectangle rectangleOfPlayer)
         {
             return rectangle.IntersectsWith(rectangleOfPlayer);
+        }
+
+        public bool IsOutOfBounds()
+        {
+            return location.X - 70 >= Game.WIDTH_OF_FORM || location.Y >= Game.HEIGHT_OF_FORM;
         }
     }
 }

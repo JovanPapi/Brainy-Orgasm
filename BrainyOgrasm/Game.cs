@@ -77,7 +77,7 @@ namespace BrainyOgrasm
         {
             for (int i = 0; i < fallingObjects.Count; i++)
             {
-                if (fallingObjects[i].Collide(Player.Collector.Rectangle) && !fallingObjects[i].Invisible)
+                if (fallingObjects[i].Collide(Player.Collector.Rectangle) && !fallingObjects[i].Invincible)
                 {
                     fallingObjects.RemoveAt(i);
                     i--;
@@ -118,14 +118,21 @@ namespace BrainyOgrasm
 
         protected void InitializeCollector()
         {
-            Player.Collector.Rectangle = new Rectangle(Player.Collector.Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + 20,
-                Player.Collector.Location.Y - Game.SIZE_OF_COLLECTOR.Height / 2 + 35,
-                Player.Collector.Image.Size.Width - 35, Player.Collector.Image.Size.Height);
+            Player.Collector.Rectangle = new Rectangle(Player.Collector.Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + Collector.PADDING_X,
+                Player.Collector.Location.Y - Game.SIZE_OF_COLLECTOR.Height / 2 + Collector.PADDING_Y,
+                Player.Collector.Image.Size.Width - Collector.PADDING_WIDTH, Player.Collector.Image.Size.Height);
         }
 
         public void Clear()
         {
-            
+            for (int i = 0; i < fallingObjects.Count; i++)
+            {
+                if (fallingObjects[i].IsOutOfBounds())
+                {
+                    fallingObjects.RemoveAt(i);
+                    i--;
+                }
+            }
         }
         
         private string ContentFromFile(string pathToFile)

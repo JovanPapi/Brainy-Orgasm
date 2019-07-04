@@ -44,6 +44,7 @@ namespace BrainyOgrasm
             Game.SIZE_OF_BACKGROUND_IMAGE = new Size(Width, Height);
             scene.Player.Collector.UpdateDataResize();
             scene.BackgroundImage = new Bitmap(scene.BackgroundImage, Game.SIZE_OF_BACKGROUND_IMAGE);
+            lblPoints.Location = new Point(this.Right - 73, 15);
         }
 
         private void ChooseGameMode(User player)

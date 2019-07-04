@@ -121,7 +121,14 @@ namespace BrainyOgrasm
                 Player.Collector.Image.Size.Width - 35, Player.Collector.Image.Size.Height);
         }
 
+        public void Clear()
+        {
+            
+        }
+
         protected abstract void FillPictureList();
         public abstract Content ChooseContent();
+
+        
     }
 }

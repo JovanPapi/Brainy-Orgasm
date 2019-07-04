@@ -93,6 +93,8 @@
             this.Controls.Add(this.lblSubDomainTitle);
             this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.txtMainContent);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "ContentForm";
             this.Text = "Content";
             ((System.ComponentModel.ISupportInitialize)(this.pbOther)).EndInit();

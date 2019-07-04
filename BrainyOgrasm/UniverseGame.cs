@@ -32,7 +32,7 @@ namespace BrainyOgrasm
 
         public override Content ChooseContent()
         {
-            throw new NotImplementedException();
+            return new Content("", "Universe", "Nesto", Properties.Resources.blueGiant, Properties.Resources.C__);
         }
     }
 }

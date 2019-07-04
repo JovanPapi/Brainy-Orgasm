@@ -60,7 +60,7 @@
             // life3
             // 
             this.life3.BackColor = System.Drawing.Color.Transparent;
-            this.life3.Location = new System.Drawing.Point(162, 443);
+            this.life3.Location = new System.Drawing.Point(166, 443);
             this.life3.Name = "life3";
             this.life3.Size = new System.Drawing.Size(52, 32);
             this.life3.TabIndex = 7;
@@ -99,6 +99,7 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameForm_KeyDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.Resize += new System.EventHandler(this.GameForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.life3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.life2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.life1)).EndInit();

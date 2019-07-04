@@ -24,9 +24,23 @@ namespace BrainyOgrasm
             Game.HEIGHT_OF_FORM = Height;
             Game.WIDTH_OF_FORM = Width;
             ChooseGameMode(player);
+            UpdateData();
             this.DoubleBuffered = true;
-            life1.Image = life2.Image = life3.Image = new Bitmap(Properties.Resources.emoji, life1.Size);
             forceQuit = false;
+        }
+
+        private void UpdateData()
+        {
+            life1.Image = life2.Image = life3.Image = new Bitmap(Properties.Resources.emoji, life1.Size);
+            int bottom = this.Height - 75;
+            life1.Location = new Point(20, bottom);
+            life2.Location = new Point(life1.Location.X + life1.Width + 16, bottom);
+            life3.Location = new Point(life2.Location.X + life1.Width + 16, bottom);
+            Game.HEIGHT_OF_FORM = Height;
+            Game.WIDTH_OF_FORM = Width;
+            Game.SIZE_OF_BACKGROUND_IMAGE = new Size(Width, Height);
+            scene.Player.Collector.UpdateData();
+            scene.BackgroundImage = new Bitmap(scene.BackgroundImage, Game.SIZE_OF_BACKGROUND_IMAGE);
         }
 
         private void ChooseGameMode(User player)
@@ -46,7 +60,7 @@ namespace BrainyOgrasm
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
-        {
+        { 
             scene.Draw(e.Graphics);
             speedOfFallingObjects.Interval = scene.Speed;
             this.BackgroundImage = scene.BackgroundImage;
@@ -68,7 +82,7 @@ namespace BrainyOgrasm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (numOfTicks % 8 == 0)
+            if (numOfTicks % 10 == 0)
             {
                 scene.AddFallingObject();
             }
@@ -121,6 +135,7 @@ namespace BrainyOgrasm
         private void ShowContent()
         {
             speedOfFallingObjects.Stop();
+            Invalidate(true);
             ContentForm cf = new ContentForm(scene.ChooseContent());
             cf.ShowDialog();
             if (scene.Update())
@@ -152,6 +167,21 @@ namespace BrainyOgrasm
                     this.MouseMove += Form1_MouseMove;
                 }
             }
+        }
+
+        private void GameForm_Resize(object sender, EventArgs e)
+        {
+            if(this.Width < Game.WIDTH_OF_FORM || this.Height < Game.HEIGHT_OF_FORM)
+            {
+
+                if (scene != null)
+                {
+                    UpdateData();
+                    scene.Clear();
+                }
+            }
+            if(scene != null)
+                UpdateData();
         }
     }
 }

@@ -24,18 +24,19 @@ namespace BrainyOgrasm
             tbGameRule.Text = "In this game, the player's objective is to collect \nas many " +
                 "objects as possible as they appear from the top of the screen." +
                 " On the bottom of the screen is a collector which the player is moving with the mouse and use" +
-                " the collector for collecting the items." + "The player has three lives" +
+                " the collector for collecting the items." + "The player can pause the game by pressing the space bar." +
+                "The player has three lives" +
                 " and by missing an item he loses one life. If he misses three items, the players game is over.";
             tbGameRule.Select(0, 0);
 
             tbGameModes.Text =
                 "1. Universe ---> In this game mode the objects represent bizzare yet beautiful and breathtaking things" +
-                " that dwell in the universe from the begging of time till now. On every ten points collected" +
+                " that dwell in the universe from the beggining of time till now. On every 20 points collected" +
                 " a message box will pop-up that shares additional info about the subject." +
                 "\r\n\r\n2. Scientists ---> In this game mode the objects represents world famous Scientists" +
                 " that changed our world with their inventions." +
-                "\r\n\r\n3. Visual Studio ---> Play this mode to learn about new types of" +
-                " programming languages and a additional information about them!";
+                "\r\n\r\n3. Visual Studio ---> Play this mode to learn which" +
+                " programming languages are supported by Visual Studio and additional information about them!";
             tbGameModes.Select(0, 0);
             tbGameModes.ReadOnly = true;
             tbGameModes.BackColor = Color.LightGray;

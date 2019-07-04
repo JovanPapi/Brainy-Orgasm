@@ -238,5 +238,212 @@
   <ItemGroup>
     <None Include="Resources\backgroundOfVS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galileo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Python.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meteor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackHole1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackHole2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueGiant1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrabNebula1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrabNebula2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExoPlanet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExoPlanet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaxy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galaxy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldenDisk2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IoMoon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueGiant2.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\Albert Einstein.txt" />
+    <Content Include="Content\Asteroid.txt" />
+    <Content Include="Content\Black Hole.txt" />
+    <Content Include="Content\Blue Giant.txt" />
+    <Content Include="Content\Brain.txt" />
+    <Content Include="Content\c#.txt" />
+    <Content Include="Content\C++.txt" />
+    <Content Include="Content\Charles Darwin.txt" />
+    <Content Include="Content\Comet.txt" />
+    <Content Include="Content\Emoji.txt" />
+    <Content Include="Content\Exo Planet.txt" />
+    <Content Include="Content\Galaxy.txt" />
+    <Content Include="Content\Galileo Galilei.txt" />
+    <Content Include="Content\Isaac Newton.txt" />
+    <Content Include="Content\Java.txt" />
+    <Content Include="Content\Johannes Kepler.txt" />
+    <Content Include="Content\Lamp.txt" />
+    <Content Include="Content\Io Moon.txt" />
+    <Content Include="Content\Marie Curie.txt" />
+    <Content Include="Content\Milky Way.txt" />
+    <Content Include="Content\Nebula.txt" />
+    <Content Include="Content\Nikola Tesla.txt" />
+    <Content Include="Content\NodeJS.txt" />
+    <Content Include="Content\Otto Hahn.txt" />
+    <Content Include="Content\PHP.txt" />
+    <Content Include="Content\PowerShell.txt" />
+    <Content Include="Content\Python.txt" />
+    <Content Include="Content\Richard Feynman.txt" />
+    <Content Include="Content\Rich GO.txt" />
+    <Content Include="Content\Ruby.txt" />
+    <Content Include="Content\Supernova.txt" />
+    <Content Include="Content\The Sun.txt" />
+    <Content Include="Content\Thomas Edison.txt" />
+    <Content Include="Content\Visual Basic.txt" />
+    <Content Include="Content\Visual Studio.txt" />
+    <Content Include="Content\Golden Record.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C#1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C++1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NodeJs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerShell1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Python1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichGo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruby1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualBasic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albert1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albert2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharlesDarwin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharlesDarwin2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edison1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edison2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GalileoGalilei1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GalileoGalilei2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesKepler1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohannesKepler2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marie2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OttoHan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OttoHan2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichardFeynam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichardFeynam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tesla1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tesla2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

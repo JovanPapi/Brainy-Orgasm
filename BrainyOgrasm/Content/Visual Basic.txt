@@ -1,0 +1,3 @@
+Visual Basic is a third generation event-driven programming language and integrated development
+enviroinment from Microsoft for its Component Object Model programming model first released in
+1991.

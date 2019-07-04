@@ -43,7 +43,7 @@
             // 
             this.speedOfFallingObjects.Enabled = true;
             this.speedOfFallingObjects.Interval = 250;
-            this.speedOfFallingObjects.Tick += new System.EventHandler(this.timer1_Tick);
+            this.speedOfFallingObjects.Tick += new System.EventHandler(this.speedOfFallingObjects_Tick);
             // 
             // lblPoints
             // 
@@ -51,7 +51,7 @@
             this.lblPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblPoints.ForeColor = System.Drawing.Color.White;
-            this.lblPoints.Location = new System.Drawing.Point(846, 15);
+            this.lblPoints.Location = new System.Drawing.Point(845, 15);
             this.lblPoints.Name = "lblPoints";
             this.lblPoints.Size = new System.Drawing.Size(27, 29);
             this.lblPoints.TabIndex = 8;
@@ -60,7 +60,8 @@
             // life3
             // 
             this.life3.BackColor = System.Drawing.Color.Transparent;
-            this.life3.Location = new System.Drawing.Point(166, 443);
+            this.life3.Location = new System.Drawing.Point(167, 443);
+            this.life3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.life3.Name = "life3";
             this.life3.Size = new System.Drawing.Size(52, 32);
             this.life3.TabIndex = 7;
@@ -70,6 +71,7 @@
             // 
             this.life2.BackColor = System.Drawing.Color.Transparent;
             this.life2.Location = new System.Drawing.Point(97, 443);
+            this.life2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.life2.Name = "life2";
             this.life2.Size = new System.Drawing.Size(52, 32);
             this.life2.TabIndex = 6;
@@ -79,6 +81,7 @@
             // 
             this.life1.BackColor = System.Drawing.Color.Transparent;
             this.life1.Location = new System.Drawing.Point(28, 443);
+            this.life1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.life1.Name = "life1";
             this.life1.Size = new System.Drawing.Size(52, 32);
             this.life1.TabIndex = 5;
@@ -93,12 +96,13 @@
             this.Controls.Add(this.life3);
             this.Controls.Add(this.life2);
             this.Controls.Add(this.life1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GameForm";
             this.Text = "GameForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameForm_FormClosing);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.GameForm_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameForm_KeyDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GameForm_MouseMove);
             this.Resize += new System.EventHandler(this.GameForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.life3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.life2)).EndInit();

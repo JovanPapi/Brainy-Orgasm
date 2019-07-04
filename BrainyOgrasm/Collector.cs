@@ -14,7 +14,7 @@ namespace BrainyOgrasm
         private int minX, minY;
 
         public Point Location { get; set; }
-        public Rectangle RectangleOfCollector { get; set; }
+        public Rectangle Rectangle { get; set; }
         public Bitmap Image { get; set; }
 
         public static int PADDING_X = 20;
@@ -23,16 +23,17 @@ namespace BrainyOgrasm
 
         public Collector()
         {
-            UpdateData();
+            UpdateDataResize();
             Location = new Point(Game.WIDTH_OF_FORM / 2, minY);
         }
 
-        public void UpdateData()
+        public void UpdateDataResize()
         {
-            minY = Game.HEIGHT_OF_FORM - 100; // 'MERICA EXPLAIN (iscrtuvanjeto)
+            minY = Game.HEIGHT_OF_FORM - 100;
             maxY = Game.HEIGHT_OF_FORM - 85;
             minX = 40;
             maxX = Game.WIDTH_OF_FORM - 70;
+            Location = new Point(Game.WIDTH_OF_FORM / 2, minY);
         }
 
         public void Draw(Graphics g)
@@ -45,7 +46,7 @@ namespace BrainyOgrasm
         public void Move(Point newLocation)
         {
             int x = 0, y = 0;
-
+ 
             if (newLocation.X <= minX)
                 x = minX;
             else if (newLocation.X >= maxX)
@@ -61,7 +62,8 @@ namespace BrainyOgrasm
                 y = newLocation.Y;
 
             Location = new Point(x, y);
-            RectangleOfCollector = new Rectangle(Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + PADDING_X,
+
+            Rectangle = new Rectangle(Location.X - Game.SIZE_OF_COLLECTOR.Width / 2 + PADDING_X,
                 Location.Y - Game.SIZE_OF_COLLECTOR.Height / 2 + PADDING_Y, Image.Size.Width - PADDING_WIDTH, Image.Size.Height);
         }
     }

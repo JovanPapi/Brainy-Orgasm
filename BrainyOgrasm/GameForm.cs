@@ -24,12 +24,15 @@ namespace BrainyOgrasm
             Game.HEIGHT_OF_FORM = Height;
             Game.WIDTH_OF_FORM = Width;
             ChooseGameMode(player);
-            UpdateData();
+            UpdateDataResize();
             this.DoubleBuffered = true;
             forceQuit = false;
+            this.BackgroundImage = scene.BackgroundImage;
+            this.Text = scene.Player.TypeOfGame == Mode.VisualStudio ? "Visual Studio" : scene.Player.TypeOfGame.ToString();
+            lblPoints.ForeColor = scene.ColorOfPoints;
         }
 
-        private void UpdateData()
+        private void UpdateDataResize()
         {
             life1.Image = life2.Image = life3.Image = new Bitmap(Properties.Resources.emoji, life1.Size);
             int bottom = this.Height - 75;
@@ -39,7 +42,7 @@ namespace BrainyOgrasm
             Game.HEIGHT_OF_FORM = Height;
             Game.WIDTH_OF_FORM = Width;
             Game.SIZE_OF_BACKGROUND_IMAGE = new Size(Width, Height);
-            scene.Player.Collector.UpdateData();
+            scene.Player.Collector.UpdateDataResize();
             scene.BackgroundImage = new Bitmap(scene.BackgroundImage, Game.SIZE_OF_BACKGROUND_IMAGE);
         }
 
@@ -59,15 +62,12 @@ namespace BrainyOgrasm
             }
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        { 
+        private void GameForm_Paint(object sender, PaintEventArgs e)
+        {
             scene.Draw(e.Graphics);
             speedOfFallingObjects.Interval = scene.Speed;
-            this.BackgroundImage = scene.BackgroundImage;
-            this.Text = scene.Player.TypeOfGame.ToString();
             lblPoints.Text = scene.Player.Points.ToString();
             Lives();
-            lblPoints.ForeColor = scene.ColorOfPoints;
         }
 
         private void Lives()
@@ -80,7 +80,7 @@ namespace BrainyOgrasm
                 life1.Visible = false;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void speedOfFallingObjects_Tick(object sender, EventArgs e)
         {
             if (numOfTicks % 10 == 0)
             {
@@ -110,7 +110,10 @@ namespace BrainyOgrasm
             speedOfFallingObjects.Stop();
             if (!forceQuit)
             {
-                MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+                if(scene.Player.Points < 200)
+                    MessageBox.Show("Game ended. You've scored " + scene.Player.Points + " points!");
+                else
+                    MessageBox.Show("Congratulations, you've finished this mode. You made 200 points!");
                 DialogResult = DialogResult.OK;
             }
             else
@@ -118,7 +121,7 @@ namespace BrainyOgrasm
             this.Close();
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private void GameForm_MouseMove(object sender, MouseEventArgs e)
         {
             scene.MovePlayer(e.Location);
             try
@@ -136,8 +139,11 @@ namespace BrainyOgrasm
         {
             speedOfFallingObjects.Stop();
             Invalidate(true);
+            this.Visible = false;
             ContentForm cf = new ContentForm(scene.ChooseContent());
             cf.ShowDialog();
+            this.Visible = true;
+
             if (scene.Update())
             {
                 Invalidate(true);
@@ -159,12 +165,12 @@ namespace BrainyOgrasm
                 if (speedOfFallingObjects.Enabled)
                 {
                     speedOfFallingObjects.Stop();
-                    this.MouseMove -= Form1_MouseMove;
+                    this.MouseMove -= GameForm_MouseMove;
                 }
                 else
                 {
                     speedOfFallingObjects.Start();
-                    this.MouseMove += Form1_MouseMove;
+                    this.MouseMove += GameForm_MouseMove;
                 }
             }
         }
@@ -176,12 +182,16 @@ namespace BrainyOgrasm
 
                 if (scene != null)
                 {
-                    UpdateData();
+                    UpdateDataResize();
+                    this.BackgroundImage = new Bitmap(scene.BackgroundImage, Game.SIZE_OF_BACKGROUND_IMAGE);
                     scene.Clear();
                 }
             }
-            if(scene != null)
-                UpdateData();
+            if (scene != null)
+            {
+                UpdateDataResize();
+                this.BackgroundImage = new Bitmap(scene.BackgroundImage, Game.SIZE_OF_BACKGROUND_IMAGE);
+            }
         }
     }
 }

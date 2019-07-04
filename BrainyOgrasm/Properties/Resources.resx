@@ -217,7 +217,175 @@
   <data name="visualStudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\visualStudio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asteroid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asteroid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asteroid1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asteroid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asteroid2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlackHole1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackHole1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlackHole2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackHole2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueGiant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueGiant1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueGiant2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueGiant2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Comet1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Comet2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrabNebula1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrabNebula1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrabNebula2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrabNebula2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExoPlanet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExoPlanet1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExoPlanet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExoPlanet2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galaxy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galaxy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galaxy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galaxy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galileo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galileo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldenDisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenDisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldenDisk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenDisk1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldenDisk2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenDisk2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IoMoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IoMoon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IoMoon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IoMoon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IoMoon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IoMoon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meteor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Meteor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Python" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Python.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sun1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sun1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sun2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sun2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backgroundOfVS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundOfVS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Albert1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Albert1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Albert2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Albert2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CharlesDarwin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CharlesDarwin1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CharlesDarwin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CharlesDarwin2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C#1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C++1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edison1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edison1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edison2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edison2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalileoGalilei1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GalileoGalilei1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalileoGalilei2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GalileoGalilei2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Java1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Java1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JohannesKepler1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JohannesKepler1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JohannesKepler2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JohannesKepler2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marie1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marie2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marie2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Newton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Newton1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Newton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Newton2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NodeJs1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeJs1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OttoHan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OttoHan1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OttoHan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OttoHan2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PHP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PHP1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerShell1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerShell1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Python1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Python1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichardFeynam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichardFeynam1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichardFeynam2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichardFeynam2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichGo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichGo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruby1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruby1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tesla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tesla1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tesla2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tesla2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VisualBasic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisualBasic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

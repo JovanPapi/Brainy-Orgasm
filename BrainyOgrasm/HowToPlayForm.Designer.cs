@@ -43,6 +43,7 @@
             this.tbGameModes.Location = new System.Drawing.Point(9, 220);
             this.tbGameModes.Multiline = true;
             this.tbGameModes.Name = "tbGameModes";
+            this.tbGameModes.ReadOnly = true;
             this.tbGameModes.Size = new System.Drawing.Size(418, 229);
             this.tbGameModes.TabIndex = 5;
             // 
@@ -62,7 +63,8 @@
             this.tbGameRule.Location = new System.Drawing.Point(9, 42);
             this.tbGameRule.Multiline = true;
             this.tbGameRule.Name = "tbGameRule";
-            this.tbGameRule.Size = new System.Drawing.Size(418, 117);
+            this.tbGameRule.ReadOnly = true;
+            this.tbGameRule.Size = new System.Drawing.Size(418, 142);
             this.tbGameRule.TabIndex = 4;
             // 
             // label1

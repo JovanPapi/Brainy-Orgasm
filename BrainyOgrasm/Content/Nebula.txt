@@ -1,2 +1,6 @@
 A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gasses. Originally, nebula
-was a name for any diffuse astronomical object, including galaxies beyond Milky Way.
+was a name for any diffuse astronomical object, including galaxies beyond Milky Way. Most nebulae are of vast
+size, some are hundreds of light-years in diameter. A nebula that is barely visible to the human eye from Earth
+would appear larger, but no brighter, from close by.
+The Orion Nebula is the brightest nebula and its size is twice as the size of the moon when we look in the sky and 
+it can be viewed by naked eyes. A nebular cloud the size of the Earth would have a total mass of only few kilograms.

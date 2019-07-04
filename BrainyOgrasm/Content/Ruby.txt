@@ -1,2 +1,5 @@
 Ruby is a dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
-It was designed and developed in the mid 1990s by Yukihiro "Matz" Matsumoto in Japan.
+It was designed and developed in the mid 1990s by Yukihiro "Matz" Matsumoto in Japan. Matsumoto has said that Ruby was 
+conceived in 1993. In a 1999 post to the ruby-talk mailing list, he describes some of his early ideas about the language.
+Matsumoto describes the design of Ruby as being like a simple Lisp language at its core, with an object system like that of 
+Smalltalk, blocks inspired by higher-order functions, and practical utility like that of Perl.

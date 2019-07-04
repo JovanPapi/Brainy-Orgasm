@@ -1,1 +1,6 @@
-Asteroids are minor planets, especially of the inner Solar System. Larger asteroids have also been called planetoids. These terms have historically been applied to any astronomical object orbiting the Sun that did not resemble a planet-like disc and was not observed to have characteristics of an active comet such as a tail.The first close-up photographs of asteroid-like objects were taken in 1971, when the Mariner 9 probe imaged Phobos and Deimos, the two small moons of Mars, which are probably captured asteroids. These images revealed the irregular, potato-like shapes of most asteroids, as did later images from the Voyager probes of the small moons of the gas giants.
+Asteroids are minor planets, especially of the inner Solar System. Larger asteroids have also been called 
+planetoids. These terms have historically been applied to any astronomical object orbiting the Sun that did
+ not resemble a planet-like disc and was not observed to have characteristics of an active comet such as a tail.
+The first close-up photographs of asteroid-like objects were taken in 1971, when the Mariner 9 probe imaged Phobos and Deimos, 
+the two small moons of Mars, which are probably captured asteroids. These images revealed the irregular, potato-like shapes of most asteroids, 
+as did later images from the Voyager probes of the small moons of the gas giants.

@@ -1,2 +1,5 @@
 C++ is a general purpose programming language created by Bjame Stroustrup as an extension of 
-the C programming language, or it's also known as "C with classes".
+the C programming language, or it's also known as "C with classes". The language has expanded significantly over time,
+and modern C++ has object-oriented, generic and functional features in addition to facilities for low-level memory
+manipulation. It is almost always implemented as a compiled language, and many years vendors provide C++ compilers, including
+the Free Software Fundation, Microsoft, IBM, etc...

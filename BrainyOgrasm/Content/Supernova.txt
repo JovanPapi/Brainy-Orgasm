@@ -1,3 +1,6 @@
 A supernova is a transient astronomical event that occurs during the last stellar evolutionary stages
 of the star's life, either a massive star or a white dwarf, whose destruction is marked by one final,
-titanic explosion.
+titanic explosion. Supernovae are more energetic than novae. In Latin, nova means "new", reffering astronomically
+to what appears to be a temporary new bright star. Adding the prefix "super-" distinguishes supernovae from ordinary novae,
+which are far less luminous. The word supernova was coined by Walter Baade and Fritz Zwicky in 1931. Only three naked-eye
+supernova events have been observed in the Milky Way during the last thousand years.

@@ -1,3 +1,6 @@
 Sir Isaac Newton was an English mathematician, astronomer, theilogian, author and physicist who
 is widely recognised as one of the most influential scientist of all time and a key figure in the scientific
-revolution.
+revolution. Newton built the first practical reflecting telescope and developed a sophisticated theory of colour
+based on the observation that a prism separates white light into the colours of the visible spectrum. He also 
+formulated an empirical law of cooling, made the first theoretical calculation of the speed of sound and introduced
+the notion of a Newtonian fluid.

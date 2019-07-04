@@ -27,7 +27,6 @@ namespace BrainyOgrasm
         public MainForm()
         {
             InitializeComponent();
-
             images = new ListImages();
             images2 = new ListImages();
             mainImages = new List<Image>();
@@ -67,6 +66,7 @@ namespace BrainyOgrasm
             MoveImages.Start();
             
         }
+        // Method that initialize list with images stored in Resources
         private void FillMainImages()
         {
             mainImages.Add(Properties.Resources.AlbertEinstein);
@@ -81,10 +81,8 @@ namespace BrainyOgrasm
         {
             if (count % 1000 == 0)
             {
-
                 images.AddImage(new ImageBox(new Point(rNumber.Next(panelLeft.Location.X - 10,
                     panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 7)]));
-
             }
             count += 500;
             images.MoveImages(panelLeft.Height);
@@ -110,7 +108,8 @@ namespace BrainyOgrasm
                 MoveImages.Enabled = true;
         }
 
-        public void SerializeUsers()
+        // Method that serializes the list of users into a file
+        private void SerializeUsers()
         {
             string FilePath = @"..\..\Users.db";
             try

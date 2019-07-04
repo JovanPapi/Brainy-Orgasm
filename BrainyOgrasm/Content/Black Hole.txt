@@ -1,2 +1,6 @@
 A black hole is a region of spacetime exibiting gravitational acceleration so strong that nothing-no
 particles or even electromagnetic radiation such as light can escape from it.
+The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form
+black hole. The boundary of the region from which no escape is possible is called the event horizon. Although 
+the event horizon has an enormous effect on the fate and circumstances of an object crossing it, locally detectable
+features appear to be observed.

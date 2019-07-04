@@ -1,2 +1,5 @@
 Albert Einstein (14 March 1879 - 18 April 1955) was a German-born theoretical physicist who
 developed the theory of relativity, one of the two pillars of modern physics.
+His work is also known for its infuence on the philosophy of science. He is best known to the general
+public for his mass-energy equivalence formula E=mc^2, which has been dubbed "the world's most
+famous equation".

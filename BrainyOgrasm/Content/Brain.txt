@@ -1,2 +1,5 @@
 The brain is an organ that serves as the center of the nervous system in all vertebrate and most 
-invertebrate animals.
+invertebrate animals. The brain is the most complex organ in a vertebrate's body. In a human, the cerebral cortex contains
+approximately 14-16 billions neurons, and estimated number of neurons in the cerebellum is 55-70 billion. 
+Physiologically, the function of the brain is to exert centralized control over the other organs of the body. The brain acts on the rest
+of the body both by generating patterns of muscle activity and by driving the secretion of chemicals called hormons.

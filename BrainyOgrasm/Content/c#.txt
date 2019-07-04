@@ -1,2 +1,4 @@
 C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative,
-functional, generic, object-oriented and component-oriented programming disciplines.
+functional, generic, object-oriented and component-oriented programming disciplines. It was developed around 2000
+by Microsoft within its .NET initiative and later approved as a standard by Ecma and ISO. C# is one of the programming
+languages designed for Common Language infrastructure.

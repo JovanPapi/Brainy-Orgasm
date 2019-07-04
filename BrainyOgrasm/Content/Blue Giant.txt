@@ -1,2 +1,5 @@
 In astronomy, a blue giant is a hot star with a luminosity class of III(giant) or II(bright giant). In the
 standard Hertzsprung-Russell diagram, these stars lie above and to the right of the main sequence.
+The term applies to a viriety of stars in different phases of development, all evolved stars that have moved
+from the main sequence but have little else in common, so blue giant simply refers to stars in particular region
+of the HR diagram rather than a speciffic type of star. 

@@ -55,8 +55,6 @@ namespace BrainyOgrasm
                 MessageBox.Show("Game cannot be started");
             }
 
-            users.Sort();
-
             pbLogoOfTheGame.SizeMode = PictureBoxSizeMode.StretchImage;
             pbLogoOfTheGame.BorderStyle = BorderStyle.Fixed3D;
             pbLogoOfTheGame.Image = Properties.Resources.logo;

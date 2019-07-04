@@ -18,19 +18,13 @@ namespace BrainyOgrasm
             txtMainContent.Text = content.MainContent;
             lblMainTitle.Text = content.MainTitle;
             lblSubDomainTitle.Text = content.SubDomainTitle;
-            pbFalling.Image = new Bitmap(content.FallingImage, pbFalling.Size);
-            pbOther.Image = new Bitmap(content.OtherImage, pbOther.Size);
-            ChangeSize();
+            pbFalling.Image = new Bitmap(content.Image1, pbFalling.Size);
+            pbOther.Image = new Bitmap(content.Image2, pbOther.Size);
         }
 
-        private void ChangeSize()
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            Size sizeOfContent = TextRenderer.MeasureText(txtMainContent.Text, txtMainContent.Font);
-            if(sizeOfContent.Height > txtMainContent.Height)
-            {
-                this.Height = sizeOfContent.Height + (this.Height - txtMainContent.Height);
-                txtMainContent.Size = sizeOfContent;
-            }
+            this.Close();
         }
     }
 }

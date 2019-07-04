@@ -54,7 +54,6 @@
     <Compile Include="ContentForm.Designer.cs">
       <DependentUpon>ContentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContentWrapper.cs" />
     <Compile Include="FallingObject.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
@@ -333,7 +332,7 @@
     <Content Include="Content\Galaxy.txt" />
     <Content Include="Content\Galileo Galilei.txt" />
     <Content Include="Content\Isaac Newton.txt" />
-    <Content Include="Content\java.txt" />
+    <Content Include="Content\Java.txt" />
     <Content Include="Content\Johannes Kepler.txt" />
     <Content Include="Content\Lamp.txt" />
     <Content Include="Content\Io Moon.txt" />
@@ -344,10 +343,10 @@
     <Content Include="Content\NodeJS.txt" />
     <Content Include="Content\Otto Hahn.txt" />
     <Content Include="Content\PHP.txt" />
-    <Content Include="Content\Powershell.txt" />
+    <Content Include="Content\PowerShell.txt" />
     <Content Include="Content\Python.txt" />
     <Content Include="Content\Richard Feynman.txt" />
-    <Content Include="Content\Richgo.txt" />
+    <Content Include="Content\Rich GO.txt" />
     <Content Include="Content\Ruby.txt" />
     <Content Include="Content\Supernova.txt" />
     <Content Include="Content\The Sun.txt" />

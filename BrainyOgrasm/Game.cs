@@ -11,8 +11,8 @@ namespace BrainyOgrasm
     public abstract class Game
     {
         private List<FallingObject> fallingObjects;
-        protected List<Bitmap> pictures;
-        protected Queue<ContentWrapper> pathsToContentFiles;
+        protected Queue<Bitmap> pictures;
+        protected Queue<Content> pathsToContentFiles;
 
         public User Player { get; set; }
         public Bitmap BackgroundImage { get; set; }
@@ -34,7 +34,8 @@ namespace BrainyOgrasm
             Player = player;
             Player.Collector = new Collector();
             fallingObjects = new List<FallingObject>();
-            pictures = new List<Bitmap>();
+            pictures = new Queue<Bitmap>();
+            pathsToContentFiles = new Queue<Content>();
             Speed = 50;
             SIZE_OF_BACKGROUND_IMAGE = new Size(WIDTH_OF_FORM, HEIGHT_OF_FORM);
         }
@@ -42,7 +43,7 @@ namespace BrainyOgrasm
         public void AddFallingObject()
         {
             Point defaultLocation = new Point(r.Next(0, WIDTH_OF_FORM - 70), 0);
-            fallingObjects.Add(new FallingObject(pictures[0], defaultLocation));
+            fallingObjects.Add(new FallingObject(pictures.Peek(), defaultLocation));
         }
 
         public void Draw(Graphics g)
@@ -82,7 +83,7 @@ namespace BrainyOgrasm
                     fallingObjects.RemoveAt(i);
                     i--;
                     Player.Points++;
-                    if (Player.Points % 10 == 0)
+                    if (Player.Points % 20 == 0)
                     {
                         throw new ShowContentException();
                     }
@@ -92,10 +93,10 @@ namespace BrainyOgrasm
 
         public bool Update()
         {
-            pictures.RemoveAt(0);
+            pictures.Dequeue();
             if (ChangeOthers())
                 return true;
-            if (Player.Points % 30 == 0)
+            if (Player.Points % 40 == 0)
                 Speed -= 10;
             return false;
         }
@@ -106,7 +107,7 @@ namespace BrainyOgrasm
             {
                 try
                 {
-                    fo.Image = pictures[0];
+                    fo.Image = pictures.Peek();
                 }
                 catch (Exception)
                 {
@@ -123,12 +124,19 @@ namespace BrainyOgrasm
                 Player.Collector.Image.Size.Width - 35, Player.Collector.Image.Size.Height);
         }
 
-        protected string ContentFromFile(string pathToFile)
+        private string ContentFromFile(string pathToFile)
         {
             return File.ReadAllText(pathToFile);
         }
 
+        public Content ChooseContent()
+        {
+            Content current = pathsToContentFiles.Dequeue();
+            current.FillContent(ContentFromFile(@".\..\..\Content\"+current.PathToFile), Player.TypeOfGame);
+            return current;
+        }
+
         protected abstract void FillPictureList();
-        public abstract Content ChooseContent();
+        protected abstract void FillPaths();
     }
 }

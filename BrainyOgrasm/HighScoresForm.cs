@@ -19,6 +19,7 @@ namespace BrainyOgrasm
         public HighScoresForm()
         {
             InitializeComponent();
+            MainForm.users.Sort();
             secondaryUsers = new List<User>();
             this.MaximizeBox = false;
             dgvUsersScores.ReadOnly = true;
@@ -29,7 +30,7 @@ namespace BrainyOgrasm
         private void GameTypeButtons_CheckedChanged(object sender, EventArgs e)
         {
             secondaryUsers.Clear();
-
+            
             if (rbUniverse.Checked)
             {
                 foreach (User us in MainForm.users)

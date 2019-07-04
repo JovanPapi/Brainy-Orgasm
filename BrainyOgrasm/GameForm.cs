@@ -45,7 +45,7 @@ namespace BrainyOgrasm
             }
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void GameForm_Paint(object sender, PaintEventArgs e)
         {
             scene.Draw(e.Graphics);
             speedOfFallingObjects.Interval = scene.Speed;
@@ -66,7 +66,7 @@ namespace BrainyOgrasm
                 life1.Visible = false;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void speedOfFallingObjects_Tick(object sender, EventArgs e)
         {
             if (numOfTicks % 8 == 0)
             {
@@ -104,7 +104,7 @@ namespace BrainyOgrasm
             this.Close();
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private void GameForm_MouseMove(object sender, MouseEventArgs e)
         {
             scene.MovePlayer(e.Location);
             try
@@ -145,12 +145,12 @@ namespace BrainyOgrasm
                 if (speedOfFallingObjects.Enabled)
                 {
                     speedOfFallingObjects.Stop();
-                    this.MouseMove -= Form1_MouseMove;
+                    this.MouseMove -= GameForm_MouseMove;
                 }
                 else
                 {
                     speedOfFallingObjects.Start();
-                    this.MouseMove += Form1_MouseMove;
+                    this.MouseMove += GameForm_MouseMove;
                 }
             }
         }

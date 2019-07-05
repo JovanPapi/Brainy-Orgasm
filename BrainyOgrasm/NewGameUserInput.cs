@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Form that displayes when the user wants to start a new game
+    /// </summary>
     public partial class NewGameUserInput : Form
     {
         public User user;
@@ -54,7 +50,10 @@ namespace BrainyOgrasm
                 return;
         }
 
-        // Method that performs validation over controls of the form 
+        /// <summary>
+        /// Performs validation on the controls
+        /// </summary>
+        /// <returns>True, if every control is validated</returns>
         private bool Validation()
         {
             if (rtbPlayerName.Text == "" && !rbVisualStudio.Checked
@@ -79,7 +78,10 @@ namespace BrainyOgrasm
             return true;
         }
 
-        // Method that returns Mode enum type for the mode that the user picked
+        /// <summary>
+        /// Checks the radio buttons for the chosen game
+        /// </summary>
+        /// <returns>Mode enum representing the Mode the User choose</returns>
         private Mode TypeOfGame()
         {
             if (rbScientists.Checked)

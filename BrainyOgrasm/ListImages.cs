@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Container class for the images in the panel
+    /// </summary>
     public class ListImages
     {
         public List<ImageBox> Images { get; set; }

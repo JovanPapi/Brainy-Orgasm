@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Form that displays when the application is started
+    /// </summary>
     public partial class MainForm : Form
     {
         private ListImages images;
         private Random rNumber;
         public static List<User> users;
-        FileStream stream;
+        private FileStream stream;
         private int count;
-        private List<Image> mainImages;
+        private List<Image> mainImages; // the images that are going to be displayed on the panels
         public static bool enableTimer;
 
         public MainForm()
@@ -40,13 +38,15 @@ namespace BrainyOgrasm
             string FilePath = @"..\..\Users.db";
             try
             {
+                // read the high scores from the file
                 stream = new FileStream(FilePath, FileMode.Open);
                 IFormatter f = new BinaryFormatter();
                 users = (List<User>)f.Deserialize(stream);
                 stream.Dispose();
             }
             catch (FileNotFoundException)
-            { 
+            {
+                // if there are no high scores yet, create a new Lists
                 users = new List<User>();
             }
             catch (Exception)
@@ -79,7 +79,7 @@ namespace BrainyOgrasm
         }
         private void MoveImages_Tick(object sender, EventArgs e)
         {
-            if (count % 1000 == 0)
+            if (count % 1000 == 0) // adds an image every two ticks
             {
                 images.AddImage(new ImageBox(new Point(rNumber.Next(panelLeft.Location.X - 10,
                     panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 7)]));

@@ -1,25 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BrainyOgrasm
 {
+    /// <summary>
+    /// Form for displaying the high scores made in every Mode
+    /// </summary>
     public partial class HighScoresForm : Form
     {
-        private List<User> secondaryUsers;
+        private List<User> secondaryUsers; // contains the users from the current mode that is displaying
         public HighScoresForm()
         {
             InitializeComponent();
-            MainForm.users.Sort();
             secondaryUsers = new List<User>();
             this.MaximizeBox = false;
             dgvUsersScores.ReadOnly = true;
@@ -31,7 +24,8 @@ namespace BrainyOgrasm
         {
             secondaryUsers.Clear();
             
-            if (rbUniverse.Checked)
+            // which Mode should be displayed
+            if (rbUniverse.Checked) 
             {
                 foreach (User us in MainForm.users)
                 {
@@ -58,6 +52,7 @@ namespace BrainyOgrasm
                 }
             }
 
+            secondaryUsers.Sort(); // sort by the users points
             dgvUsersScores.DataSource = null;
             dgvUsersScores.DataSource = secondaryUsers;
             dgvUsersScores.Height = (dgvUsersScores.Rows.Count + 2) * dgvUsersScores.RowTemplate.Height;

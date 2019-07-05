@@ -38,10 +38,11 @@
             // 
             // dgvUsersScores
             // 
+            this.dgvUsersScores.AllowUserToResizeColumns = false;
+            this.dgvUsersScores.AllowUserToResizeRows = false;
             this.dgvUsersScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
             this.dgvUsersScores.Location = new System.Drawing.Point(16, 66);
-            this.dgvUsersScores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUsersScores.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUsersScores.Name = "dgvUsersScores";
             this.dgvUsersScores.Size = new System.Drawing.Size(324, 166);
             this.dgvUsersScores.TabIndex = 10;
@@ -62,7 +63,7 @@
             this.rbVisualStudio.AutoSize = true;
             this.rbVisualStudio.Font = new System.Drawing.Font("Arial", 9F);
             this.rbVisualStudio.Location = new System.Drawing.Point(219, 15);
-            this.rbVisualStudio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbVisualStudio.Margin = new System.Windows.Forms.Padding(4);
             this.rbVisualStudio.Name = "rbVisualStudio";
             this.rbVisualStudio.Size = new System.Drawing.Size(109, 21);
             this.rbVisualStudio.TabIndex = 8;
@@ -76,7 +77,7 @@
             this.rbScientists.AutoSize = true;
             this.rbScientists.Font = new System.Drawing.Font("Arial", 9F);
             this.rbScientists.Location = new System.Drawing.Point(115, 15);
-            this.rbScientists.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbScientists.Margin = new System.Windows.Forms.Padding(4);
             this.rbScientists.Name = "rbScientists";
             this.rbScientists.Size = new System.Drawing.Size(93, 21);
             this.rbScientists.TabIndex = 7;
@@ -90,7 +91,7 @@
             this.rbUniverse.AutoSize = true;
             this.rbUniverse.Font = new System.Drawing.Font("Arial", 9F);
             this.rbUniverse.Location = new System.Drawing.Point(16, 15);
-            this.rbUniverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbUniverse.Margin = new System.Windows.Forms.Padding(4);
             this.rbUniverse.Name = "rbUniverse";
             this.rbUniverse.Size = new System.Drawing.Size(86, 21);
             this.rbUniverse.TabIndex = 6;
@@ -110,7 +111,7 @@
             this.Controls.Add(this.rbScientists);
             this.Controls.Add(this.rbUniverse);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HighScoresForm";
             this.Text = "High Scores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsersScores)).EndInit();

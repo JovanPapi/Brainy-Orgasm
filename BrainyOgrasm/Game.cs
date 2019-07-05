@@ -35,7 +35,7 @@ namespace BrainyOgrasm
         /// <summary>
         /// Gets or sets the Color that the points of the Player will be displayed
         /// </summary>
-        public Color ColorOfPoints { get; set; } // every mode has different backgrounds which requires different color for the points
+        public Color ColorOfPoints { get; set; } // every mode has a different background which requires different color for the points
 
         /// <summary>
         /// Current width of the GameForm
@@ -87,7 +87,7 @@ namespace BrainyOgrasm
         }
 
         /// <summary>
-        /// Draws the Falling Objects and the Collector
+        /// Draws the Falling Objects and the User's Collector
         /// </summary>
         /// <param name="g">Graphics object</param>
         public void Draw(Graphics g)
@@ -105,7 +105,8 @@ namespace BrainyOgrasm
         {
             for (int i = 0; i < fallingObjects.Count; i++)
             {
-                if (fallingObjects[i].Move())
+                fallingObjects[i].Move();
+                if (fallingObjects[i].IsOutOfBounds())
                 {
                     fallingObjects.RemoveAt(i);
                     i--;

@@ -37,7 +37,7 @@ namespace BrainyOgrasm
                 if (MainForm.users.Contains(user))
                 {
                     MessageBox.Show("The username " + user.Name + " is taken!");
-                    rtbPlayerName.Select(0, rtbPlayerName.Text.Length);
+                    rtbPlayerName.Focus();
                     return;
                 }
                 this.Visible = false;

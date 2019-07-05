@@ -16,7 +16,6 @@ namespace BrainyOgrasm
     public partial class MainForm : Form
     {
         private ListImages images;
-        private ListImages images2;
         private Random rNumber;
         public static List<User> users;
         FileStream stream;
@@ -28,7 +27,6 @@ namespace BrainyOgrasm
         {
             InitializeComponent();
             images = new ListImages();
-            images2 = new ListImages();
             mainImages = new List<Image>();
             rNumber = new Random();
             enableTimer = false;
@@ -36,6 +34,8 @@ namespace BrainyOgrasm
             this.DoubleBuffered = true;
             count = 0;
             stream = null;
+
+            ListImages.PANEL_HEIGHT = panelLeft.Height;
 
             string FilePath = @"..\..\Users.db";
             try
@@ -85,7 +85,7 @@ namespace BrainyOgrasm
                     panelLeft.Location.X + 50), panelLeft.Location.Y - 40), mainImages[rNumber.Next(0, 7)]));
             }
             count += 500;
-            images.MoveImages(panelLeft.Height);
+            images.MoveImages();
             Invalidate(true);
         }
 

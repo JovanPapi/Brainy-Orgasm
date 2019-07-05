@@ -7,35 +7,51 @@ using System.Threading.Tasks;
 
 namespace BrainyOgrasm
 {
-
+    /// <summary>
+    /// Class that represents an image that moves down
+    /// </summary>
     public class ImageBox
     {
-        public Point ImageLocation { get; set; }
-        public Image OriginalImage { get; set; }
-        public const int ImageWidth = 30;
-        public const int ImageHeight = 30;
+        /// <summary>
+        /// Location of the image
+        /// </summary>
+        protected Point location;
+
+        /// <summary>
+        /// Gets or sets the image
+        /// </summary>
+        public Bitmap Image { get; set; }
 
         public ImageBox(Point imageLocation, Image img)
         {
-            OriginalImage = img;
-            ImageLocation = imageLocation;
+            Image = new Bitmap(img);
+            location = imageLocation;
         }
 
         /// <summary>
-        /// Method for drawing an image
+        /// Method for drawing the image
         /// </summary>
         /// <param name="g">Graphics object</param>
-        public void DrawImage(Graphics g)
+        public virtual void Draw(Graphics g)
         {
-            g.DrawImage(OriginalImage, ImageLocation.X, ImageLocation.Y, ImageWidth, ImageHeight);
+            g.DrawImage(Image, location.X, location.Y, 30, 30);
         }
 
         /// <summary>
-        /// Method for moving an image
+        /// Method for moving the image
         /// </summary>
-        public void MoveImageLocation()
+        public virtual void Move()
         {
-            this.ImageLocation = new Point(ImageLocation.X, ImageLocation.Y + 30);
+            this.location = new Point(location.X, location.Y + 30);
+        }
+
+        /// <summary>
+        /// Checks if the object has left the panel
+        /// </summary>
+        /// <returns>True, if the object has left the panel</returns>
+        public virtual bool IsOutOfBounds()
+        {
+            return location.Y > ListImages.PANEL_HEIGHT + 60;
         }
     }
 }

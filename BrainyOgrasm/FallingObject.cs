@@ -8,23 +8,15 @@ using System.Threading.Tasks;
 namespace BrainyOgrasm
 {
     /// <summary>
-    /// Class that represents the falling objects in the game
+    /// Class that represents the falling objects in the GameForm
     /// </summary>
-    public class FallingObject
+    public class FallingObject : ImageBox
     {
         /// <summary>
         /// Rectangle of falling object
         /// </summary>
         private Rectangle rectangle;
-        /// <summary>
-        /// Location of the falling object
-        /// </summary>
-        private Point location;
 
-        /// <summary>
-        /// Gets or sets the image that represents the falling object
-        /// </summary>
-        public Bitmap Image { get; set; }
         /// <summary>
         /// Can the object be collected
         /// </summary>
@@ -35,39 +27,41 @@ namespace BrainyOgrasm
         /// </summary>
         /// <param name="image">The image that represents the falling object</param>
         /// <param name="location">The default location of the falling object</param>
-        public FallingObject(Bitmap image, Point location)
+        public FallingObject(Bitmap image, Point location) : base(location, image)
         {
-            this.Image = image;
-            this.location = location;
             rectangle = new Rectangle(location, image.Size);
             Invincible = false;
         }
 
         /// <summary>
-        /// Moves the falling object
+        /// Method for moving the image
         /// </summary>
-        /// <returns>True, if the object has left the form</returns>
-        public bool Move()
+        public override void Move()
         {
             location = new Point(location.X, location.Y + 10);
             rectangle = new Rectangle(location, Image.Size);
 
             if (location.Y >= Game.HEIGHT_OF_FORM - 60)
                 Invincible = true;
-
-            if (location.Y + Game.SIZE_OF_FALLING_OBJECT.Height >= Game.HEIGHT_OF_FORM)
-                return true;
-            return false;
         }
 
         /// <summary>
-        /// Draws the falling object
+        /// Method for drawing the image
         /// </summary>
         /// <param name="g">Graphics object</param>
-        public void Draw(Graphics g)
+        public override void Draw(Graphics g)
         {
             g.DrawImageUnscaled(Image, location.X, location.Y,
                 Game.SIZE_OF_FALLING_OBJECT.Width, Game.SIZE_OF_FALLING_OBJECT.Height);
+        }
+
+        /// <summary>
+        /// Checks if the object is out of GameForm's bounderies when resizing
+        /// </summary>
+        /// <returns>True, if falling object is not in GameForm bounderies</returns>
+        public override bool IsOutOfBounds()
+        {
+            return location.X + 70 >= Game.WIDTH_OF_FORM || location.Y + 70 >= Game.HEIGHT_OF_FORM;
         }
 
         /// <summary>
@@ -78,15 +72,6 @@ namespace BrainyOgrasm
         public bool Collide(Rectangle rectangleOfPlayer)
         {
             return rectangle.IntersectsWith(rectangleOfPlayer);
-        }
-
-        /// <summary>
-        /// Checks if the object is out of GameForm's bounderies when resizing
-        /// </summary>
-        /// <returns>True, if falling object is not in GameForm bounderies</returns>
-        public bool IsOutOfBounds()
-        {
-            return location.X + 70 >= Game.WIDTH_OF_FORM || location.Y + 70 >= Game.HEIGHT_OF_FORM;
         }
     }
 }

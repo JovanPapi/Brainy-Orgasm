@@ -11,6 +11,8 @@ namespace BrainyOgrasm
     {
         public List<ImageBox> Images { get; set; }
 
+        public static int PANEL_HEIGHT;
+
         public ListImages()
         {
             this.Images = new List<ImageBox>();
@@ -24,7 +26,7 @@ namespace BrainyOgrasm
         {
             foreach (ImageBox im in Images)
             {
-                im.DrawImage(g);
+                im.Draw(g);
             }
         }
 
@@ -32,16 +34,16 @@ namespace BrainyOgrasm
         /// Method that lists all images and moves them 
         /// </summary>
         /// <param name="panelHeight">The height of the panel</param>
-        public void MoveImages(int panelHeight)
+        public void MoveImages()
         {
             for (int i = 0; i < Images.Count; i++)
             {
-                if (Images[i].ImageLocation.Y > panelHeight + 60)
+                if (Images[i].IsOutOfBounds())
                 {
                     Images.Remove(Images[i]); 
                 }
                 else
-                    Images[i].MoveImageLocation();
+                    Images[i].Move();
             }
         }
 
